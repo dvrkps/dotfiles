@@ -1,0 +1,9 @@
+<keymap>
+   <FullscreenVideo>
+        <keyboard>
+            <escape>Stop</escape>
+            <home>SubtitleDelayPlus</home>
+            <end>SubtitleDelayMinus</end>
+        </keyboard>
+    </FullscreenVideo>
+</keymap>

@@ -1,0 +1,18 @@
+[user]
+	name = Davor Kapsa
+	email = davorkapsa@gmail.com
+[core]
+	editor = vim
+	autocrlf = input
+[merge]
+	tool = vimdiff
+[color]
+	ui = true
+[push]
+	default = simple
+[github]
+	user = dvrkps
+[credential]
+	helper = cache
+[url "https://dvrkps@github.com"]
+	insteadOf = https://github.com

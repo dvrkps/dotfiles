@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# bash (~) 
+ln -sfr ~/cloud/dotfiles/bash_logout ~/.bash_logout
+ln -sfr ~/cloud/dotfiles/bash_profile ~/.bash_profile
+ln -sfr ~/cloud/dotfiles/bashrc ~/.bashrc
+
+# git (~)
+ln -sfr ~/cloud/dotfiles/gitconfig ~/.gitconfig
+
+# golang (~)
+ln -sfrT ~/cloud/go/bin ~/bin
+ln -sfrT ~/cloud/go/src ~/src
+
+# i3 (~)
+ln -sfrT ~/cloud/dotfiles/i3 ~/.i3
+
+# kodi (~)
+ln -sfr ~/cloud/dotfiles/kodi/advancedsettings.xml ~/.kodi/userdata/advancedsettings.xml
+ln -sfr ~/cloud/dotfiles/kodi/guisettings.xml ~/.kodi/userdata/guisettings.xml
+ln -sfr ~/cloud/dotfiles/kodi/keyboard.xml ~/.kodi/userdata/keymaps/keyboard.xml
+
+# mplayer (~)
+ln -sfrT ~/cloud/dotfiles/mplayer ~/.mplayer
+
+# sqlite3 (~)
+ln -sfr ~/cloud/dotfiles/sqliterc ~/.sqliterc
+
+# vim (~/.vim)
+ln -sfr ~/cloud/dotfiles/vimrc ~/.vim/vimrc
+
+# Xorg (~)
+ln -sfr ~/cloud/dotfiles/Xauthority ~/.Xauthority
+ln -sfr ~/cloud/dotfiles/xinitrc ~/.xinitrc
+ln -sfr ~/cloud/dotfiles/Xresources ~/.Xresources
+
