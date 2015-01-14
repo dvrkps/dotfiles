@@ -70,6 +70,7 @@ alias cdtiva='c;cd $tivapath;ll'
 
 # *** git **********************************************************
 source ~/.git-completion.bash
+source ~/.git-prompt.sh
 
 alias gs='git status -sb'
 alias gl='git log --oneline'
