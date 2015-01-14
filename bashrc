@@ -14,16 +14,14 @@ shopt -s checkwinsize
 # Bash completion
 . /usr/share/bash-completion/bash_completion
 
-# Git completion
-. /usr/share/git/completion/git-prompt.sh
-
 
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
 
-PS1='\n\w\n\e[1;35m$(__git_ps1 "(%s) ")\e[0m$ '
+PS1='\n\w\n$(__git_ps1 "(%s) ")$ '
+
 
 alias ls='ls --color=auto'
 alias ll='ls -ahlF'
