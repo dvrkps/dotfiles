@@ -14,5 +14,3 @@
 	user = dvrkps
 [credential]
 	helper = cache
-[url "https://dvrkps@github.com"]
-	insteadOf = https://github.com
