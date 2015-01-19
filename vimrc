@@ -13,6 +13,7 @@ call vundle#end()            	" required
 filetype plugin indent on    	" required
 
 set encoding=utf-8
+scriptencoding utf-8
 set showcmd			" display incomplete commands
 
 set viminfo+=n~/.vim/viminfo
