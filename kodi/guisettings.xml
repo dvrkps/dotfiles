@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>26169</systemtotaluptime>
+        <systemtotaluptime>29209</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -3129,7 +3129,7 @@
             <sortattributes>1</sortattributes>
         </videonavtitles>
         <videonavtvshows>
-            <viewmode>131572</viewmode>
+            <viewmode>65586</viewmode>
             <sortmethod>27</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>1</sortattributes>
