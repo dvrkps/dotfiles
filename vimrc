@@ -121,5 +121,5 @@ let g:syntastic_go_checkers=['go','golint', 'govet']
 
 au FileType go nmap <leader><leader>t :!clear;go test -cover -cpu 4<cr>
 au FileType go nmap <leader>t :!clear;go test -cpu 4<cr>
-au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=. -cpu 4<cr>
+au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=. -cpu 1,2,4<cr>
 au FileType go nmap <leader>r :GoRun<cr>
