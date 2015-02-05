@@ -25,7 +25,6 @@ map <space><space> <leader><leader>
 
 " Quickly edit/reload the vimrc file
 nnoremap <silent> <leader>vim :edit $MYVIMRC<cr>
-"nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 autocmd! bufwritepost vimrc source $MYVIMRC
 
 
