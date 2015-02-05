@@ -13,4 +13,4 @@
 [github]
 	user = dvrkps
 [credential]
-	helper = cache
+	helper = cache --timeout=3600
