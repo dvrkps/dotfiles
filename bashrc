@@ -84,7 +84,7 @@ export GOPATH=$HOME
 alias cdsrcdvrkps='c;cd $GOPATH/src/github.com/dvrkps;ll'
 
 # *** apps *********************************************************
-alias bmi='c;bmicmd -h 1.87 -g -kg '
+alias bmi='c;bima -h 1.87 -g -kg '
 alias cigs='c;cigs -s 2012-02-03'
 
 # *** tvst *********************************************************
