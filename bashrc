@@ -91,7 +91,7 @@ alias cigs='c;cigs -s 2012-02-03'
 alias cdtvst='c;cd $GOPATH/src/tvst;ll'
 alias tvst='workon tvst;$HOME/src/tvst/bin/tvst;deactivate'
 alias airings='workon tvst;$HOME/src/tvst/bin/airings_job;deactivate'
-alias subtitles='workon tvst;$HOME/src/tvst/bin/subtitles_job;deactivate'
+alias subtitles='workon tvst;$HOME/src/tvst/bin/subtitles_job;deactivate;ls /data/torrents/tiva'
 
 alias tvstdebug='cat $HOME/src/tvst/logs/debug.log'
 alias tvsterror='cat $HOME/src/tvst/logs/errors.log'
