@@ -1,15 +1,13 @@
-set nocompatible              	" be iMproved, required
+call plug#begin('~/.vim/plugged')
 
-" VUNDLE *
+Plug 'altercation/vim-colors-solarized'
+Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'scrooloose/syntastic', {'for': 'go'}
+
+call plug#end()
+
+set nocompatible              	" be iMproved, required
 filetype off                  	" required
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim' 	" let Vundle manage Vundle, required
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'fatih/vim-go'
-Plugin 'scrooloose/syntastic'
-" All of your Plugins must be added before the following line
-call vundle#end()            	" required
 filetype plugin indent on    	" required
 
 set encoding=utf-8
