@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'scrooloose/syntastic', {'for': 'go'}
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
