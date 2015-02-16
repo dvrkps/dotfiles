@@ -48,24 +48,27 @@ alias mirrorlistgenerate='sudo reflector -l 20 --sort score -p http -p https --s
 export bookspath='/data/books'
 alias cdbooks='c;cd $bookspath;ll'
 
+export downloadspath='/data/downloads'
+alias cddownloads='c;cd $downloadspath;ll'
+alias rmdownloads='rm $downloadspath/* -i -rf;cddownloads'
+
 export moviespath='/data/movies'
 alias cdmovies='c;cd $moviespath;ll'
 
 export musicpath='/data/music/new'
 alias cdmusic='c;cd $musicpath;ll'
 
-export tvshowspath='/data/tvshows'
-alias cdtvshows='c;cd $tvshowspath;ll'
+export notespath="$HOME/cloud/notes"
+alias cdnotes='c;cd $notespath;ll'
 
-export downloadspath='/data/downloads'
-alias cddownloads='c;cd $downloadspath;ll'
-alias rmdownloads='rm $downloadspath/* -i -rf;cddownloads'
+export tivapath='/data/torrents/tiva'
+alias cdtiva='c;cd $tivapath;ll'
 
 export torrentspath='/data/torrents'
 alias cdtorrents='c;cd $torrentspath;ll'
 
-export tivapath='/data/torrents/tiva'
-alias cdtiva='c;cd $tivapath;ll'
+export tvshowspath='/data/tvshows'
+alias cdtvshows='c;cd $tvshowspath;ll'
 
 
 # *** git **********************************************************
