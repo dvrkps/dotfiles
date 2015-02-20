@@ -42,6 +42,9 @@ nnoremap k gk
 " save
 nnoremap <Leader>w :w<CR>
 
+" :q
+nnoremap <Leader>q :q<CR>
+
 " System clipboard
 vnoremap <Leader>y "+y
 vnoremap <Leader>d "+d
