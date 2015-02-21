@@ -1,22 +1,15 @@
-URxvt.font:     xft:bitstream vera sans mono:size=11:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=11:antialias=true
-URxvt.scrollBar: false
-URxvt.transparent: true
-URxvt.shading: 20
-!URxvt.buffered: false
-
-URxvt.perl-ext-common: default,clipboard
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.M-v:   perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-
 ! Solarized color scheme for the X Window System
 !
 ! http://ethanschoonover.com/solarized
+! Default to dark background if neither constant is defined, or if both are.
+#if !defined(SOLARIZED_LIGHT) && !defined(SOLARIZED_DARK)
+	#define SOLARIZED_DARK
+#elif defined(SOLARIZED_LIGHT) && defined(SOLARIZED_DARK)
+	#undef SOLARIZED_LIGHT
+#endif
 
 
 ! Common
-
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
 #define S_red           #dc322f
@@ -28,28 +21,32 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
 
 ! Dark
-
-#define S_base03        #002b36
-#define S_base02        #073642
-#define S_base01        #586e75
-#define S_base00        #657b83
-#define S_base0         #839496
-#define S_base1         #93a1a1
-#define S_base2         #eee8d5
-#define S_base3         #fdf6e3
-
+#ifdef SOLARIZED_DARK
+	URxvt.transparent: true
+	URxvt.shading: 20
+	#define S_base03        #002b36
+	#define S_base02        #073642
+	#define S_base01        #586e75
+	#define S_base00        #657b83
+	#define S_base0         #839496
+	#define S_base1         #93a1a1
+	#define S_base2         #eee8d5
+	#define S_base3         #fdf6e3
+#endif
 
 ! Light
-
-! #define S_base03        #fdf6e3
-! #define S_base02        #eee8d5
-! #define S_base01        #93a1a1
-! #define S_base00        #839496
-! #define S_base0         #657b83
-! #define S_base1         #586e75
-! #define S_base2         #073642
-! #define S_base3         #002b36
-
+#if SOLARIZED_LIGHT
+	URxvt.transparent: false
+	URxvt.shading: 0
+	#define S_base03        #fdf6e3
+	#define S_base02        #eee8d5
+	#define S_base01        #93a1a1
+	#define S_base00        #839496
+	#define S_base0         #657b83
+	#define S_base1         #586e75
+	#define S_base2         #073642
+	#define S_base3         #002b36
+#endif
 
 ! To only apply colors to your terminal, for example, prefix
 ! the color assignment statement with its name. Example:
@@ -81,3 +78,11 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 *color14:                 S_base1
 *color15:                 S_base3
 
+URxvt.font:     xft:bitstream vera sans mono:size=11:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=11:antialias=true
+URxvt.scrollBar: false
+
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped

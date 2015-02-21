@@ -70,6 +70,9 @@ alias cdtorrents='c;cd $torrentspath;ll'
 export tvshowspath='/data/tvshows'
 alias cdtvshows='c;cd $tvshowspath;ll'
 
+# *** git **********************************************************
+alias solardark='xrdb -DSOLARIZED_DARK -load ~/.Xresources'
+alias solarlight='xrdb -DSOLARIZED_LIGHT -load ~/.Xresources'
 
 # *** git **********************************************************
 source ~/.git-completion.bash
