@@ -1,4 +1,4 @@
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xrdb -DSOLARIZED_DARK -load ~/.Xresources
 
 xset r rate 400 44
 setxkbmap hr
