@@ -14,3 +14,8 @@
 	user = dvrkps
 [credential]
 	helper = cache --timeout=3600
+[alias]
+	a = add
+	c = commit -m
+	l = log --oneline --max-count=5
+	s = status --short --branch
