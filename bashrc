@@ -75,13 +75,6 @@ alias cdtvshows='c;cd $tvshowspath;ll'
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
-alias gs='git status -sb'
-alias gl='git log --oneline'
-alias gb='git branch'
-alias ga='git add'
-alias gco='git checkout'
-alias gcm='git commit -m'
-
 # *** golang workspace *********************************************
 export GOPATH=$HOME
 alias cdsrcdvrkps='c;cd $GOPATH/src/github.com/dvrkps;ll'
