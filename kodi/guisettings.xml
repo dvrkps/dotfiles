@@ -3143,6 +3143,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>0.900000</fvolumelevel>
+        <fvolumelevel>1.000000</fvolumelevel>
     </audio>
 </settings>
