@@ -113,6 +113,9 @@ set undolevels=100       " use many muchos levels of undo
 let g:solarized_termtrans=0
 colorscheme solarized
 
+" *** fugitive ***
+nmap <leader>gs :Gstatus<cr>
+
 " *** markdown ***
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
