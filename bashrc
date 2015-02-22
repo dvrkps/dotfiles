@@ -75,6 +75,7 @@ alias solardark='xrdb -DSOLARIZED_DARK -load ~/.Xresources'
 alias solarlight='xrdb -DSOLARIZED_LIGHT -load ~/.Xresources'
 
 # *** git **********************************************************
+export GIT_PS1_SHOWDIRTYSTATE=1
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
