@@ -115,6 +115,7 @@ colorscheme solarized
 
 " *** fugitive ***
 nmap <leader>gs :Gstatus<cr>
+nmap <leader>gl :!git l<cr>
 
 " *** markdown ***
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
