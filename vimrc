@@ -67,6 +67,7 @@ nmap <Enter> O<Esc>j
 " Status line
 set laststatus=2
 set statusline=%f
+set statusline+=%{fugitive#statusline()}
 set statusline+=%=
 set statusline+=%c
 
