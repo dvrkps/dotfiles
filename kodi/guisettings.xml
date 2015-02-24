@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>34229</systemtotaluptime>
+        <systemtotaluptime>34898</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -1243,11 +1243,13 @@
         <setting type="bool" name="skin.aeon.nox.5.mainmenuicons">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.lowermainmenu">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.biggergap">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">true</setting>
+        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Enable.TvTunes">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.NextAired">true</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.UnwatchedIcon">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.nohighlist">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.EnableExtraFanart">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.AutoFocusUnwatchedEpisode">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
