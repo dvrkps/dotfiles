@@ -45,14 +45,6 @@ nnoremap <Leader>w :w<CR>
 " :q
 nnoremap <Leader>q :q<CR>
 
-" System clipboard
-vnoremap <Leader>y "+y
-vnoremap <Leader>d "+d
-nnoremap <Leader>p "+p
-nnoremap <Leader>P "+P
-vnoremap <Leader>p "+p
-vnoremap <Leader>P "+P
-
 " Esc
 inoremap jk <Esc>
 
