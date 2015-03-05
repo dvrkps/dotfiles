@@ -82,6 +82,7 @@ source ~/.git-prompt.sh
 # *** golang workspace *********************************************
 export GOPATH=$HOME
 alias cdsrcdvrkps='c;cd $GOPATH/src/github.com/dvrkps;ll'
+alias cdexercism='c;cd $GOPATH/src/github.com/dvrkps/exercism/go;ll'
 
 # *** apps *********************************************************
 alias bmi='c;bima -h 1.87 -g -kg '
