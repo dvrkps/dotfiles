@@ -118,6 +118,6 @@ let g:go_fmt_command = "goimports"
 let g:syntastic_go_checkers=['go','golint', 'govet']
 
 au FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
-au FileType go nmap <leader>t :!clear;go test -cpu 4<cr>
+au FileType go nmap <leader>t :!clear;go test<cr>
 au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=.<cr>
 au FileType go nmap <leader>r :GoRun<cr>
