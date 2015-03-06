@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>37333</systemtotaluptime>
+        <systemtotaluptime>41922</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -171,7 +171,7 @@
         <stackvideos default="true">false</stackvideos>
         <startwindow>10025</startwindow>
         <watchmodemovies>0</watchmodemovies>
-        <watchmodetvshows>1</watchmodetvshows>
+        <watchmodetvshows>0</watchmodetvshows>
         <watchmodemusicvideos>0</watchmodemusicvideos>
         <playlist>
             <repeat>false</repeat>
@@ -1243,7 +1243,7 @@
         <setting type="bool" name="skin.aeon.nox.5.mainmenuicons">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.lowermainmenu">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.biggergap">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">true</setting>
+        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Enable.TvTunes">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.NextAired">true</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.UnwatchedIcon">false</setting>
@@ -2364,7 +2364,7 @@
         <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Disable"></setting>
         <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Disable">True</setting>
         <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.youtube/channel/mine/playlists/&quot;,return)</setting>
         <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Disable"></setting>
         <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Path"></setting>
         <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Disable"></setting>
@@ -2504,7 +2504,7 @@
         <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.SubMenu"></setting>
         <setting type="string" name="skin.aeon.nox.5.Startup_Playlist_Path"></setting>
         <setting type="string" name="skin.aeon.nox.5.InfoPanel.Delay"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Label">YT Playlists</setting>
         <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.MultiFanart"></setting>
         <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Icon"></setting>
         <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.BGType"></setting>
@@ -3089,7 +3089,7 @@
             <sortattributes>0</sortattributes>
         </programs>
         <videofiles>
-            <viewmode>131572</viewmode>
+            <viewmode>131575</viewmode>
             <sortmethod>1</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>1</sortattributes>
@@ -3145,6 +3145,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>0.766666</fvolumelevel>
+        <fvolumelevel>1.000000</fvolumelevel>
     </audio>
 </settings>
