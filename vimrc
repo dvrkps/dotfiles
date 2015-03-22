@@ -119,3 +119,4 @@ au FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
 au FileType go nmap <leader>t :!clear;go test<cr>
 au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=.<cr>
 au FileType go nmap <leader>r :GoRun<cr>
+au FileType go nmap <leader>l :!gometalinter<cr>
