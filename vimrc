@@ -105,6 +105,10 @@ colorscheme solarized
 " *** markdown ***
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" *** git ***
+nmap <leader>g :!git s<cr>
+nmap <leader><leader>g :!git l<cr>
+
 " *** golang ***
 au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
