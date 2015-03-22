@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
-
 call plug#end()
 
 set nocompatible              	" be iMproved, required
