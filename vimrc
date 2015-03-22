@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
-Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -58,7 +57,6 @@ nmap <Enter> O<Esc>j
 " Status line
 set laststatus=2
 set statusline=%f
-set statusline+=%{fugitive#statusline()}
 set statusline+=%=
 set statusline+=%c
 
@@ -103,10 +101,6 @@ set undolevels=100       " use many muchos levels of undo
 
 let g:solarized_termtrans=0
 colorscheme solarized
-
-" *** fugitive ***
-nmap <leader>gs :Gstatus<cr>
-nmap <leader>gl :!git l<cr>
 
 " *** markdown ***
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
