@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
-Plug 'scrooloose/syntastic', {'for': 'go'}
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
@@ -115,7 +114,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 " *** golang ***
 au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
-let g:syntastic_go_checkers=['go','golint', 'govet']
 
 au FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
 au FileType go nmap <leader>t :!clear;go test<cr>
