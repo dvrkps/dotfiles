@@ -184,5 +184,5 @@ bar {
 
 exec --no-startup-id systemctl --user start feh-wallpaper.service
 
-exec --no-startup-id transmission-gtk
-assign [class="Transmission"] 10
+#exec --no-startup-id transmission-gtk
+#assign [class="Transmission"] 10
