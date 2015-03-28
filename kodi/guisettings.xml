@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>41922</systemtotaluptime>
+        <systemtotaluptime>44180</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -171,7 +171,7 @@
         <stackvideos default="true">false</stackvideos>
         <startwindow>10025</startwindow>
         <watchmodemovies>0</watchmodemovies>
-        <watchmodetvshows>0</watchmodetvshows>
+        <watchmodetvshows>1</watchmodetvshows>
         <watchmodemusicvideos>0</watchmodemusicvideos>
         <playlist>
             <repeat>false</repeat>
@@ -1243,7 +1243,7 @@
         <setting type="bool" name="skin.aeon.nox.5.mainmenuicons">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.lowermainmenu">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.biggergap">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">true</setting>
         <setting type="bool" name="skin.aeon.nox.5.Enable.TvTunes">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.NextAired">true</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.UnwatchedIcon">false</setting>
