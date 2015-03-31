@@ -70,7 +70,7 @@ alias cdtorrents='c;cd $torrentspath;ll'
 export tvshowspath='/data/tvshows'
 alias cdtvshows='c;cd $tvshowspath;ll'
 
-# *** git **********************************************************
+# *** themes *******************************************************
 alias solardark='xrdb -DSOLARIZED_DARK -load ~/.Xresources'
 alias solarlight='xrdb -DSOLARIZED_LIGHT -load ~/.Xresources'
 
@@ -87,6 +87,7 @@ alias cdexercism='c;cd $GOPATH/src/github.com/dvrkps/exercism/go;ll'
 # *** apps *********************************************************
 alias bmi='c;bima -h 1.87 -g -kg '
 alias cigs='c;cigs -s 2012-02-03'
+alias torrents='transmission-daemon;transmission-remote-cli'
 
 # *** tvst *********************************************************
 alias cdtvst='c;cd $GOPATH/src/tvst;ll'
