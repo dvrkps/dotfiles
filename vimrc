@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set nocompatible              	" be iMproved, required
@@ -56,6 +57,7 @@ nmap <Enter> O<Esc>j
 " Status line
 set laststatus=2
 set statusline=%f
+set statusline+=%{fugitive#statusline()}
 set statusline+=%=
 set statusline+=%c
 
@@ -105,10 +107,8 @@ colorscheme solarized
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " *** git ***
-nmap <leader>gs :!git s<cr>
-nmap <leader>ga :!git a<space>
-nmap <leader>gc :!git c<space>
-nmap <leader>gl :!git l<cr>
+nmap <leader>g :Gstatus<cr>
+nmap <leader><leader>g :!git l<cr>
 
 " *** golang ***
 au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
