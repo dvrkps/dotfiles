@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 call plug#end()
 
 set nocompatible              	" be iMproved, required
