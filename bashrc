@@ -85,6 +85,7 @@ alias cdsrcdvrkps='c;cd $GOPATH/src/github.com/dvrkps;ll'
 alias cdexercism='c;cd $GOPATH/src/github.com/dvrkps/exercism/go;ll'
 
 # *** apps *********************************************************
+alias bckp='becca -s /home/dvrkps/cloud -d /data/backup'
 alias bmi='c;bima -h 1.87 -g -kg '
 alias cigs='c;cigs -s 2012-02-03'
 alias torrents='transmission-daemon;transmission-remote-cli'
