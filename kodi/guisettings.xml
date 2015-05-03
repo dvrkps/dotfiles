@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>50534</systemtotaluptime>
+        <systemtotaluptime>51414</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -1250,6 +1250,8 @@
         <setting type="bool" name="skin.aeon.nox.5.nohighlist">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.EnableExtraFanart">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.AutoFocusUnwatchedEpisode">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.playlists">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.favorites">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
