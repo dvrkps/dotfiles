@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>51978</systemtotaluptime>
+        <systemtotaluptime>52079</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -171,7 +171,7 @@
         <stackvideos default="true">false</stackvideos>
         <startwindow>10025</startwindow>
         <watchmodemovies>0</watchmodemovies>
-        <watchmodetvshows>0</watchmodetvshows>
+        <watchmodetvshows>1</watchmodetvshows>
         <watchmodemusicvideos>0</watchmodemusicvideos>
         <playlist>
             <repeat>false</repeat>
@@ -3147,6 +3147,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>0.511110</fvolumelevel>
+        <fvolumelevel>1.000000</fvolumelevel>
     </audio>
 </settings>
