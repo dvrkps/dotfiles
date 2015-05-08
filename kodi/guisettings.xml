@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>52251</systemtotaluptime>
+        <systemtotaluptime>52864</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -1243,7 +1243,7 @@
         <setting type="bool" name="skin.aeon.nox.5.mainmenuicons">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.lowermainmenu">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.biggergap">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">true</setting>
         <setting type="bool" name="skin.aeon.nox.5.Enable.TvTunes">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.NextAired">true</setting>
         <setting type="bool" name="skin.aeon.nox.5.Disable.UnwatchedIcon">false</setting>
@@ -3091,7 +3091,7 @@
             <sortattributes>0</sortattributes>
         </programs>
         <videofiles>
-            <viewmode>131575</viewmode>
+            <viewmode>65586</viewmode>
             <sortmethod>1</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>1</sortattributes>
@@ -3147,6 +3147,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>1.000000</fvolumelevel>
+        <fvolumelevel>0.811111</fvolumelevel>
     </audio>
 </settings>
