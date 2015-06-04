@@ -82,7 +82,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>58388</systemtotaluptime>
+        <systemtotaluptime>58758</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
