@@ -116,6 +116,7 @@ let g:go_fmt_command = "goimports"
 
 au FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
 au FileType go nmap <leader>t :!clear;go test<cr>
+au FileType go nmap <leader>z :!clear;go test -race<cr>
 au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=. -benchmem<cr>
 au FileType go nmap <leader>r :GoRun<cr>
 au FileType go nmap <leader>l :!gometalinter ./...<cr>
