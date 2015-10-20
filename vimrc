@@ -113,6 +113,7 @@ nmap <leader><leader>g :!git l<cr>
 " *** golang ***
 au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
+let g:go_metalinter_command = "gometalinter ./..."
 
 au FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
 au FileType go nmap <leader>t :!clear;go test<cr>
