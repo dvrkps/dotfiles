@@ -89,6 +89,9 @@ set ignorecase
 set smartcase
 nnoremap <silent> <leader><leader> :nohlsearch<CR>
 
+" quickfix window on very bottom
+autocmd FileType qf wincmd J
+
 " Scrolling
 set scrolloff=8
 set sidescrolloff=15
@@ -121,4 +124,4 @@ au FileType go nmap <leader>z :!clear;go test -race<cr>
 au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=. -benchmem<cr>
 au FileType go nmap <leader>r :!clear<cr>:GoRun<cr>
 au FileType go nmap <leader><leader>r :GoRun<cr>
-au FileType go nmap <leader>l :!gometalinter ./...<cr>
+au FileType go nmap <leader>l :!gometalinter --deadline=90s ./...<cr>
