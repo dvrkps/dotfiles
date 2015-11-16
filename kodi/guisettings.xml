@@ -1,4 +1,9 @@
 <settings>
+    <accessibility>
+        <audiohearing default="true">false</audiohearing>
+        <audiovisual default="true">false</audiovisual>
+        <subhearing default="true">false</subhearing>
+    </accessibility>
     <audiocds>
         <autoaction default="true">0</autoaction>
         <ejectonrip default="true">true</ejectonrip>
@@ -47,9 +52,9 @@
         <lan default="true">2048</lan>
     </cachevideo>
     <debug>
-        <extralogging default="true">false</extralogging>
+        <extralogging default="true">true</extralogging>
         <screenshotpath default="true"></screenshotpath>
-        <setextraloglevel default="true"></setextraloglevel>
+        <setextraloglevel default="true">32768</setextraloglevel>
         <showloginfo default="true">false</showloginfo>
     </debug>
     <disc>
@@ -82,7 +87,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>64106</systemtotaluptime>
+        <systemtotaluptime>86998</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -101,10 +106,16 @@
         <charset>CP1250</charset>
         <country>Central Europe</country>
         <keyboardlayouts default="true">English QWERTY</keyboardlayouts>
-        <language default="true">English</language>
+        <language default="true">resource.language.en_gb</language>
+        <longdateformat default="true">regional</longdateformat>
+        <shortdateformat default="true">regional</shortdateformat>
+        <speedunit default="true">regional</speedunit>
         <subtitlelanguage default="true">original</subtitlelanguage>
+        <temperatureunit default="true">regional</temperatureunit>
+        <timeformat default="true">regional</timeformat>
         <timezone>Europe/Zagreb</timezone>
         <timezonecountry>Croatia</timezonecountry>
+        <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
         <enablerssfeeds>false</enablerssfeeds>
@@ -114,7 +125,7 @@
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
-        <soundskin>Bursting Bubbles</soundskin>
+        <soundskin default="true">resource.uisounds.confluence</soundskin>
         <startupwindow default="true">10000</startupwindow>
     </lookandfeel>
     <masterlock>
@@ -136,8 +147,8 @@
         <artistsscraper default="true">metadata.artists.universal</artistsscraper>
         <backgroundupdate default="true">false</backgroundupdate>
         <downloadinfo default="true">false</downloadinfo>
-        <enabled default="true">true</enabled>
         <overridetags default="true">false</overridetags>
+        <showallitems default="true">true</showallitems>
         <showcompilationartists default="true">true</showcompilationartists>
         <updateonstartup default="true">false</updateonstartup>
     </musiclibrary>
@@ -150,6 +161,8 @@
         <replaygainnogainpreamp default="true">89</replaygainnogainpreamp>
         <replaygainpreamp default="true">89</replaygainpreamp>
         <replaygaintype default="true">1</replaygaintype>
+        <seekdelay default="true">750</seekdelay>
+        <seeksteps default="true">-60,-30,-10,10,30,60</seeksteps>
         <visualisation default="true">visualization.glspectrum</visualisation>
     </musicplayer>
     <mymusic>
@@ -163,13 +176,13 @@
         <needsupdate>0</needsupdate>
     </mymusic>
     <myvideos>
+        <extractchapterthumbs default="true">true</extractchapterthumbs>
         <extractflags default="true">true</extractflags>
         <extractthumb default="true">true</extractthumb>
         <flatten default="true">false</flatten>
         <replacelabels default="true">true</replacelabels>
         <selectaction default="true">1</selectaction>
         <stackvideos default="true">false</stackvideos>
-        <startwindow>10025</startwindow>
         <watchmodemovies>0</watchmodemovies>
         <watchmodetvshows>1</watchmodetvshows>
         <watchmodemusicvideos>0</watchmodemusicvideos>
@@ -221,6 +234,7 @@
     <pvrplayback>
         <channelentrytimeout default="true">0</channelentrytimeout>
         <confirmchannelswitch default="true">false</confirmchannelswitch>
+        <fps default="true">0</fps>
         <playminimized default="true">true</playminimized>
         <scantime default="true">10</scantime>
         <signalquality default="true">true</signalquality>
@@ -268,6 +282,7 @@
         <esportrange default="true">10</esportrange>
         <upnpannounce default="true">true</upnpannounce>
         <upnpcontroller default="true">false</upnpcontroller>
+        <upnplookforexternalsubtitles default="true">false</upnplookforexternalsubtitles>
         <upnprenderer default="true">false</upnprenderer>
         <upnpserver default="true">false</upnpserver>
         <useairplaypassword default="true">false</useairplaypassword>
@@ -296,13 +311,14 @@
         <font default="true">arial.ttf</font>
         <height>40</height>
         <languages default="true">English</languages>
-        <movie default="true">-</movie>
+        <movie default="true"></movie>
         <overrideassfonts default="true">false</overrideassfonts>
+        <parsecaptions default="true">false</parsecaptions>
         <pauseonsearch>false</pauseonsearch>
         <stereoscopicdepth default="true">0</stereoscopicdepth>
         <storagemode default="true">0</storagemode>
         <style default="true">1</style>
-        <tv default="true">-</tv>
+        <tv default="true"></tv>
     </subtitles>
     <system>
         <playlistspath>special://profile/playlists/</playlistspath>
@@ -310,26 +326,28 @@
     <videolibrary>
         <actorthumbs>false</actorthumbs>
         <backgroundupdate default="true">false</backgroundupdate>
-        <enabled default="true">true</enabled>
         <flattentvshows default="true">1</flattentvshows>
         <groupmoviesets>true</groupmoviesets>
+        <showallitems default="true">true</showallitems>
         <showunwatchedplots>false</showunwatchedplots>
+        <tvshowsincludeallseasonsandspecials default="true">0</tvshowsincludeallseasonsandspecials>
+        <tvshowsselectfirstunwatcheditem default="true">0</tvshowsselectfirstunwatcheditem>
         <updateonstartup>true</updateonstartup>
     </videolibrary>
     <videoplayer>
         <adjustrefreshrate default="true">0</adjustrefreshrate>
         <autoplaynextitem default="true">false</autoplaynextitem>
-        <decodingmethod default="true">1</decodingmethod>
         <errorinaspect default="true">0</errorinaspect>
         <hqscalers default="true">0</hqscalers>
-        <maxspeedadjust default="true">5</maxspeedadjust>
         <pauseafterrefreshchange default="true">0</pauseafterrefreshchange>
+        <preferdefaultflag default="true">true</preferdefaultflag>
         <prefervaapirender default="true">true</prefervaapirender>
         <quitstereomodeonstop default="true">true</quitstereomodeonstop>
         <rendermethod default="true">0</rendermethod>
+        <seekdelay default="true">750</seekdelay>
+        <seeksteps default="true">-600,-300,-180,-60,-30,-10,10,30,60,180,300,600</seeksteps>
         <stereoscopicplaybackmode default="true">0</stereoscopicplaybackmode>
         <stretch43 default="true">0</stretch43>
-        <synctype default="true">2</synctype>
         <teletextenabled>false</teletextenabled>
         <teletextscale default="true">true</teletextscale>
         <useamcodec default="true">true</useamcodec>
@@ -337,11 +355,10 @@
         <usedxva2 default="true">true</usedxva2>
         <useomx default="true">true</useomx>
         <useomxplayer default="true">true</useomxplayer>
-        <usepbo default="true">true</usepbo>
         <usevaapi default="true">true</usevaapi>
         <usevaapimpeg2 default="true">true</usevaapimpeg2>
         <usevaapimpeg4 default="true">true</usevaapimpeg4>
-        <usevaapivc1 default="true">false</usevaapivc1>
+        <usevaapivc1 default="true">true</usevaapivc1>
         <usevda default="true">true</usevda>
         <usevdpau default="true">true</usevdpau>
         <usevdpaumixer default="true">true</usevdpaumixer>
@@ -349,8 +366,6 @@
         <usevdpaumpeg4 default="true">false</usevdpaumpeg4>
         <usevdpauvc1 default="true">true</usevdpauvc1>
         <usevideotoolbox default="true">true</usevideotoolbox>
-        <vdpauUpscalingLevel default="true">false</vdpauUpscalingLevel>
-        <vdpau_allow_xrandr default="true">false</vdpau_allow_xrandr>
     </videoplayer>
     <videoscreen>
         <blankdisplays default="true">false</blankdisplays>
@@ -1252,6 +1267,13 @@
         <setting type="bool" name="skin.aeon.nox.5.AutoFocusUnwatchedEpisode">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.playlists">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.favorites">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Enable.HideRatings">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.emby">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SmartShortcuts.netflix">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.EnableNextAiredNotifications">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.DisableAllWidgets">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Video.Plot.Cast">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
@@ -2380,7 +2402,7 @@
         <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Disable">True</setting>
         <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Disable">True</setting>
         <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Disable">True</setting>
         <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Disable">True</setting>
         <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Disable">True</setting>
         <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Disable">True</setting>
@@ -2573,6 +2595,12 @@
         <setting type="string" name="skin.aeon.nox.5.TVShows.Fallback"></setting>
         <setting type="string" name="skin.aeon.nox.5.Videos.Fallback"></setting>
         <setting type="string" name="skin.aeon.nox.5.LiveTV.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.CustomPicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.randomfanartdelay"></setting>
+        <setting type="string" name="skin.aeon.nox.5.GadgetRows"></setting>
+        <setting type="string" name="skin.aeon.nox.5.StudioImagesCustompath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.widget-"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Home_Custom_Back_TV_Folder"></setting>
     </skinsettings>
     <resolutions>
         <resolution>
@@ -3043,7 +3071,6 @@
         <gamma>20.000000</gamma>
         <audiodelay>0.000000</audiodelay>
         <subtitledelay>0.000000</subtitledelay>
-        <autocrop>false</autocrop>
         <nonlinstretch>false</nonlinstretch>
         <stereomode>0</stereomode>
     </defaultvideosettings>
@@ -3147,6 +3174,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>0.900000</fvolumelevel>
+        <fvolumelevel>1.000000</fvolumelevel>
     </audio>
 </settings>
