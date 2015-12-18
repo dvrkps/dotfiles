@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # bash (~) 
-ln -sfr ~/cloud/dotfiles/bash_logout ~/.bash_logout
 ln -sfr ~/cloud/dotfiles/bash_profile ~/.bash_profile
 ln -sfr ~/cloud/dotfiles/bashrc ~/.bashrc
 
@@ -28,6 +27,9 @@ ln -sfr ~/cloud/dotfiles/sqliterc ~/.sqliterc
 
 # vim (~/.vim)
 ln -sfr ~/cloud/dotfiles/vimrc ~/.vim/vimrc
+
+# nvim (~/.config/nvim)
+ln -sfr ~/cloud/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 
 # Xorg (~)
 ln -sfr ~/cloud/dotfiles/Xauthority ~/.Xauthority
