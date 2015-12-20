@@ -2,7 +2,7 @@
 	name = Davor Kapsa
 	email = davorkapsa@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 	autocrlf = input
 [merge]
 	tool = vimdiff
