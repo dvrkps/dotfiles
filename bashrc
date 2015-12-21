@@ -2,10 +2,14 @@
 [[ $- != *i* ]] && return
 
 
-export PATH=$PATH:$HOME/bin
+export CDPATH=".:$HOME:/data:/usr/local/go/src:$GOPATH/src/golang.org:$GOPATH/src/github.com"
 
-export EDITOR=vim
-export GIT_EDITOR=vim
+
+export PATH="$PATH:$HOME/bin"
+
+
+export EDITOR=nvim
+
 
 # Make sure window sizes update correctly.
 shopt -s checkwinsize
@@ -34,9 +38,6 @@ alias suspend='systemctl suspend'
 
 alias c='clear'
 
-# edit and automatic reload after
-alias bashrc='vim ~/.bashrc && source ~/.bashrc'
-
 alias ..='cd ..'
 alias ...='cd ../../'
 
@@ -44,31 +45,17 @@ alias t='tree'
 
 alias mirrorlistgenerate='sudo reflector -l 20 --sort score -p http -p https --save /etc/pacman.d/mirrorlist'
 
+
 # directories
 export bookspath='/data/books'
-alias cdbooks='c;cd $bookspath;ll'
-
 export downloadspath='/data/downloads'
-alias cddownloads='c;cd $downloadspath;ll'
-alias rmdownloads='rm $downloadspath/* -i -rf;cddownloads'
-
 export moviespath='/data/movies'
-alias cdmovies='c;cd $moviespath;ll'
-
 export musicpath='/data/music/new'
+export tivapath='/data/torrents/tiva'
+export tvshowspath='/data/tvshows'
+alias cdtiva='c;cd $tivapath;ll'
 alias cdmusic='c;cd $musicpath;ll'
 
-export notespath="$HOME/cloud/notes"
-alias cdnotes='c;cd $notespath;ll'
-
-export tivapath='/data/torrents/tiva'
-alias cdtiva='c;cd $tivapath;ll'
-
-export torrentspath='/data/torrents'
-alias cdtorrents='c;cd $torrentspath;ll'
-
-export tvshowspath='/data/tvshows'
-alias cdtvshows='c;cd $tvshowspath;ll'
 
 # *** themes *******************************************************
 alias solardark='xrdb -DSOLARIZED_DARK -load ~/.Xresources'
@@ -81,8 +68,6 @@ source ~/.git-prompt.sh
 
 # *** golang workspace *********************************************
 export GOPATH=$HOME
-alias cdsrcdvrkps='c;cd $GOPATH/src/github.com/dvrkps;ll'
-alias cdexercism='c;cd $GOPATH/src/github.com/dvrkps/exercism/go;ll'
 
 # *** apps *********************************************************
 alias bckp='becca -s /home/dvrkps/cloud -d /data/backup'
