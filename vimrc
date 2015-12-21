@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', {'for': 'go'}
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
@@ -25,6 +24,7 @@ nnoremap <silent> <leader>vim :edit $MYVIMRC<cr>
 autocmd! bufwritepost vimrc source $MYVIMRC
 
 
+
 " remove arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -46,13 +46,8 @@ nnoremap <Leader>q :q<CR>
 " Esc
 inoremap jk <Esc>
 
-" Windows change
-nnoremap <tab> <C-w><C-w>
-" Buffer change
-nnoremap <s-tab> :bn<cr>
-
 " Insert newline normal mode
-nmap <Enter> O<Esc>j
+nnoremap <Enter> O<Esc>j
 
 " Status line
 set laststatus=2
@@ -63,7 +58,7 @@ set statusline+=%c
 
 syntax enable
 
-set number
+set number relativenumber
 set autoread
 set hidden
 set cursorline
@@ -88,6 +83,9 @@ set incsearch				" incremental searching
 set ignorecase
 set smartcase
 nnoremap <silent> <leader><leader> :nohlsearch<CR>
+
+" resize splits
+autocmd VimResized * :wincmd = 
 
 " quickfix window on very bottom
 autocmd FileType qf wincmd J
@@ -118,10 +116,11 @@ au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_command = "gometalinter ./..."
 
-au FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
-au FileType go nmap <leader>t :!clear;go test<cr>
-au FileType go nmap <leader>z :!clear;go test -race<cr>
-au FileType go nmap <leader>b :!clear;go test -run=XXX -bench=. -benchmem<cr>
-au FileType go nmap <leader>r :!clear<cr>:GoRun<cr>
-au FileType go nmap <leader><leader>r :GoRun<cr>
-au FileType go nmap <leader>l :!gometalinter --deadline=90s ./...<cr>
+autocmd FileType go nmap <leader><leader>t :!clear;go test -cover<cr>
+autocmd FileType go nmap <leader>t :!clear;go test<cr>
+
+autocmd FileType go nmap <leader>z :!clear;go test -race<cr>
+autocmd FileType go nmap <leader>b :!clear;go test -run=XXX -bench=. -benchmem<cr>
+autocmd FileType go nmap <leader>r :!clear<cr>:GoRun<cr>
+autocmd FileType go nmap <leader><leader>r :GoRun<cr>
+autocmd FileType go nmap <leader>l :!gometalinter --deadline=90s ./...<cr>
