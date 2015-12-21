@@ -1,6 +1,6 @@
 <advancedsettings>
     <video>
-        <subsdelayrange>60</subsdelayrange>
+        <subsdelayrange>999</subsdelayrange>
         <smallstepbackseconds>10</smallstepbackseconds>  <!-- Length of the small skip back (normally the BACK button) when playing a video -->
         <usetimeseeking>true</usetimeseeking>  <!-- Whether to use time based or percentage based seeking. -->
         <timeseekforward>5</timeseekforward>  <!-- Time to seek forward in seconds when doing a short seek.  Defaults to 30. -->
