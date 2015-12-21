@@ -87,7 +87,7 @@
         <addonnotifications>false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
-        <systemtotaluptime>86998</systemtotaluptime>
+        <systemtotaluptime>91714</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -1274,6 +1274,8 @@
         <setting type="bool" name="skin.aeon.nox.5.EnableNextAiredNotifications">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.DisableAllWidgets">false</setting>
         <setting type="bool" name="skin.aeon.nox.5.Video.Plot.Cast">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SkinHelper.EnableExtraFanart">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.SkinHelper.EnablePVRThumbs">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
@@ -2601,6 +2603,17 @@
         <setting type="string" name="skin.aeon.nox.5.StudioImagesCustompath"></setting>
         <setting type="string" name="skin.aeon.nox.5.widget-"></setting>
         <setting type="string" name="skin.aeon.nox.5.Home_Custom_Back_TV_Folder"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.PicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.CustomPicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.RandomFanartDelay"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.ForcedViews.episodes"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.CustomStudioImagesPath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.ForcedViews.movies"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.ShowInfoAtPlaybackStart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.AutoCloseVideoOSD"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.ForcedViews.tvshows"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.ForcedViews."></setting>
+        <setting type="string" name="skin.aeon.nox.5.SkinHelper.ForcedViews.seasons"></setting>
     </skinsettings>
     <resolutions>
         <resolution>
