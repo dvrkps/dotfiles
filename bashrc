@@ -1,11 +1,18 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Paths
+export PATH=$PATH:$HOME/bin
+export GOPATH=$HOME
+export CDPATH=.:$HOME:/data:/usr/local/go:$GOPATH/src/github.com/golanghr:$GOPATH/src/github.com/dvrkps
 
-export CDPATH=".:$HOME:/data:/usr/local/go/src:$GOPATH/src/golang.org:$GOPATH/src/github.com"
-
-
-export PATH="$PATH:$HOME/bin"
+export bookspath='/data/books'
+export downloadspath='/data/downloads'
+export moviespath='/data/movies'
+export musicpath='/data/music/new'
+export torrentspath='/data/torrents'
+export tivapath='/data/torrents/tiva'
+export tvshowspath='/data/tvshows'
 
 
 export EDITOR=nvim
@@ -45,14 +52,6 @@ alias t='tree'
 
 alias mirrorlistgenerate='sudo reflector -l 20 --sort score -p http -p https --save /etc/pacman.d/mirrorlist'
 
-
-# directories
-export bookspath='/data/books'
-export downloadspath='/data/downloads'
-export moviespath='/data/movies'
-export musicpath='/data/music/new'
-export tivapath='/data/torrents/tiva'
-export tvshowspath='/data/tvshows'
 alias cdtiva='c;cd $tivapath;ll'
 alias cdmusic='c;cd $musicpath;ll'
 
@@ -66,8 +65,6 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
-# *** golang workspace *********************************************
-export GOPATH=$HOME
 
 # *** apps *********************************************************
 alias bckp='becca -s /home/dvrkps/cloud -d /data/backup'
