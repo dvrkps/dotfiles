@@ -12,7 +12,10 @@ ln -sfrT ~/cloud/go/bin ~/bin
 ln -sfrT ~/cloud/go/src ~/src
 
 # i3 (~)
-ln -sfrT ~/cloud/dotfiles/i3 ~/.i3
+ln -sfrT ~/cloud/dotfiles/i3 ~/.config/i3
+
+# i3status (~)
+ln -sfrT ~/cloud/dotfiles/i3status ~/.config/i3status
 
 # kodi (~)
 ln -sfr ~/cloud/dotfiles/kodi/advancedsettings.xml ~/.kodi/userdata/advancedsettings.xml
