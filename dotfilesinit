@@ -1,40 +1,40 @@
 #!/bin/bash
 
-# bash (~) 
+# bash
 ln -sfr ~/cloud/dotfiles/bash_profile ~/.bash_profile
 ln -sfr ~/cloud/dotfiles/bashrc ~/.bashrc
 
-# git (~)
+# git
 ln -sfr ~/cloud/dotfiles/git ~/.config/git
 
-# golang (~)
+# golang
 ln -sfrT ~/cloud/go/bin ~/bin
 ln -sfrT ~/cloud/go/src ~/src
 
-# i3 (~)
+# i3
 ln -sfrT ~/cloud/dotfiles/i3 ~/.config/i3
 
-# i3status (~)
+# i3status
 ln -sfrT ~/cloud/dotfiles/i3status ~/.config/i3status
 
-# kodi (~)
+# kodi
 ln -sfr ~/cloud/dotfiles/kodi/advancedsettings.xml ~/.kodi/userdata/advancedsettings.xml
 ln -sfr ~/cloud/dotfiles/kodi/guisettings.xml ~/.kodi/userdata/guisettings.xml
 ln -sfr ~/cloud/dotfiles/kodi/keyboard.xml ~/.kodi/userdata/keymaps/keyboard.xml
 
-# mplayer (~)
+# mplayer
 ln -sfrT ~/cloud/dotfiles/mplayer ~/.mplayer
 
-# sqlite3 (~)
+# sqlite3
 ln -sfr ~/cloud/dotfiles/sqliterc ~/.sqliterc
 
 # vim (~/.vim)
 ln -sfr ~/cloud/dotfiles/vimrc ~/.vim/vimrc
 
-# nvim (~/.config/nvim)
+# nvim
 ln -sfr ~/cloud/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 
-# Xorg (~)
+# Xorg
 ln -sfr ~/cloud/dotfiles/Xauthority ~/.Xauthority
 ln -sfr ~/cloud/dotfiles/xinitrc ~/.xinitrc
 ln -sfr ~/cloud/dotfiles/Xresources ~/.Xresources
