@@ -17,6 +17,6 @@
 [alias]
 	a  = add
 	c  = commit -m
-	l  = log --oneline -5
+	l  = log --oneline -10
 	la = log --oneline
 	s  = status --short --branch
