@@ -5,7 +5,7 @@ ln -sfr ~/cloud/dotfiles/bash_profile ~/.bash_profile
 ln -sfr ~/cloud/dotfiles/bashrc ~/.bashrc
 
 # git
-ln -sfr ~/cloud/dotfiles/git ~/.config/git
+ln -sfrT ~/cloud/dotfiles/git ~/.config/git
 
 # golang
 ln -sfrT ~/cloud/go/git.nivas.hr ~/src/git.nivas.hr
