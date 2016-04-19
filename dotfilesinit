@@ -7,10 +7,6 @@ ln -sfr ~/cloud/dotfiles/bashrc ~/.bashrc
 # git
 ln -sfrT ~/cloud/dotfiles/git ~/.config/git
 
-# golang
-ln -sfrT ~/cloud/go/git.nivas.hr ~/src/git.nivas.hr
-ln -sfrT ~/cloud/go/dvrkps ~/src/github.com/dvrkps
-
 # i3
 ln -sfrT ~/cloud/dotfiles/i3 ~/.config/i3
 
