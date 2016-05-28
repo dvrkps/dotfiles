@@ -68,13 +68,13 @@ nmap <leader><leader>g :!git l<cr>
 au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
 
-let g:go_term_enabled = 0
+let g:go_term_enabled = 1
 let g:go_term_mode = "split"
 
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 autocmd FileType go nmap <leader>t :GoTest<cr>
 autocmd FileType go nmap <leader>z :GoTest -race<cr>
-autocmd FileType go nmap <leader>c :GoCoverage<cr>
+autocmd FileType go nmap <leader>c :GoCoverageToggle<cr>
 autocmd FileType go nmap <leader><leader>c :terminal go test -cover<cr>
 autocmd FileType go nmap <leader>b :terminal go test -run=XXX -bench=. -benchmem<cr>
 autocmd FileType go nmap <leader>l :terminal gometalinter --deadline 90s<cr>
