@@ -1,6 +1,6 @@
 [user]
 	name = Davor Kapsa
-	email = davorkapsa@gmail.com
+	email = davor.kapsa@gmail.com
 [core]
 	editor = nvim
 	autocrlf = input
