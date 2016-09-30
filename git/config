@@ -15,8 +15,8 @@
 [credential]
 	helper = cache --timeout=3600
 [alias]
-	a  = add
-	c  = commit -m
-	l  = log --oneline -10
-	la = log --oneline
-	s  = status --short --branch
+	a   = add
+	cim = commit -m
+	l   = log --oneline -10
+	la  = log --oneline
+	s   = status --short --branch
