@@ -20,3 +20,5 @@
 	l   = log --oneline -10
 	la  = log --oneline
 	s   = status --short --branch
+[gpg]
+	program = gpg2
