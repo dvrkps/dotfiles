@@ -1,6 +1,7 @@
 [user]
 	name = Davor Kapsa
 	email = davor.kapsa@gmail.com
+	signingkey = 0A6D5844D9E049C8
 [core]
 	editor = nvim
 	autocrlf = input
