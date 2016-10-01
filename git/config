@@ -25,6 +25,6 @@
 	la  = log --oneline
 	s   = status --short --branch
 [gpg]
-	program = gpg
+	program = gpg # revert to gpg2 after test
 [commit]
 	gpgsign = true
