@@ -19,11 +19,12 @@
 	a   = add
 	br  = branch
 	cim = commit -m
+	co = checkout
 	contributors = shortlog --summary --numbered
 	l   = log --oneline -10
 	la  = log --oneline
 	s   = status --short --branch
 [gpg]
-	program = gpg2
+	program = gpg
 [commit]
 	gpgsign = true
