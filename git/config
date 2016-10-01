@@ -19,6 +19,7 @@
 	a   = add
 	br  = branch
 	cim = commit -m
+	contributors = shortlog --summary --numbered
 	l   = log --oneline -10
 	la  = log --oneline
 	s   = status --short --branch
