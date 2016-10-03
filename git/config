@@ -2,21 +2,35 @@
 	name = Davor Kapsa
 	email = davor.kapsa@gmail.com
 	signingkey = 0A6D5844D9E049C8
+
+[github]
+	user = dvrkps
+
+[url "https://dvrkps@github.com"]
+	insteadOf = https://github.com
+
 [core]
 	editor = nvim
 	autocrlf = input
-[merge]
-	tool = vimdiff
+
+[gpg]
+	program = gpg2
+
 [color]
 	ui = true
+
+[merge]
+	tool = vimdiff
+
 [push]
 	default = simple
-[github]
-	user = dvrkps
-[url "https://dvrkps@github.com"]
-	insteadOf = https://github.com
+
+[commit]
+	gpgsign = true
+
 [credential]
 	helper = cache --timeout=3600
+
 [alias]
 	a   = add
 	br  = branch
@@ -26,7 +40,4 @@
 	l   = log --oneline -10
 	la  = log --oneline
 	s   = status --short --branch
-[gpg]
-	program = gpg2
-[commit]
-	gpgsign = true
+
