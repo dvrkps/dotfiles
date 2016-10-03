@@ -13,6 +13,8 @@
 	default = simple
 [github]
 	user = dvrkps
+[url "https://dvrkps@github.com"]
+	insteadOf = https://github.com
 [credential]
 	helper = cache --timeout=3600
 [alias]
