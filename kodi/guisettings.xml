@@ -100,7 +100,7 @@
             <level>0</level>
             <showhigherlevels>true</showhigherlevels>
         </eventlog>
-        <systemtotaluptime>149336</systemtotaluptime>
+        <systemtotaluptime>149383</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -400,44 +400,82 @@
     </window>
     <skinsettings>
         <setting id="skin.mimic.VideosHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.confluence.Use_Startup_Playlist" type="bool">false</setting>
-        <setting id="skin.apptv.CustomAddon.5.Icon" type="string"></setting>
-        <setting id="skin.nebula.hide.plexbmc.19.title" type="bool">false</setting>
-        <setting id="skin.apptv.libraryentry-music" type="string"></setting>
-        <setting id="skin.refocus.overlay.tvshows.disable" type="bool">false</setting>
-        <setting id="skin.mimic.MovieHomeItem.Widget" type="string"></setting>
+        <setting id="skin.refocus.overlay.pvr" type="bool">false</setting>
         <setting id="skin.nebula.Hide_Unwatched_Marks" type="bool">false</setting>
-        <setting id="skin.apptv.libraryentry-tv" type="string"></setting>
-        <setting id="skin.blackglassnova.Favourites.Hide" type="bool">true</setting>
-        <setting id="skin.apptv.libraryentry-movie" type="string"></setting>
-        <setting id="skin.nebula.Quit.Hide" type="bool">false</setting>
-        <setting id="skin.nebula.OverlayTransparency70" type="bool">false</setting>
+        <setting id="skin.1080xf.HideHomeButtons" type="bool">false</setting>
         <setting id="skin.refocus.menu.nowplaying" type="bool">false</setting>
-        <setting id="skin.blackglassnova.ArtistView" type="bool">false</setting>
-        <setting id="skin.mimic.MusicHomeItem.Label" type="string"></setting>
-        <setting id="skin.1080xf.HomeVideoTile1" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Hide.Favourites" type="bool">true</setting>
+        <setting id="skin.conq.DebugInfo" type="bool">false</setting>
+        <setting id="skin.mimic.Custom1HomeItem.Path" type="string"></setting>
+        <setting id="skin.blackglassnova.DisableFanart" type="bool">false</setting>
         <setting id="skin.blackglassnova.Clips.Show" type="bool">false</setting>
         <setting id="skin.blackglassnova.Overlay.Color.White" type="bool">true</setting>
+        <setting id="skin.blackglassnova.MusicPlayingFanart" type="bool">false</setting>
+        <setting id="skin.nebula.hide.plexbmc.7.title" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.Label" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.Icon" type="string"></setting>
+        <setting id="skin.blackglassnova.Weather.Hide" type="bool">true</setting>
         <setting id="skin.mimic.VideosHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.refocus.keyboard.enable" type="bool">false</setting>
+        <setting id="skin.refocus.HideFilenameFlagging" type="bool">false</setting>
+        <setting id="skin.nebula.plexbmc" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Overlay.Color.Violet" type="bool">false</setting>
+        <setting id="skin.nebula.Quit.Hide" type="bool">false</setting>
+        <setting id="skin.nebula.OverlayTransparency70" type="bool">false</setting>
+        <setting id="skin.refocus.overlay.files.disable" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.conq.Overlays" type="bool">false</setting>
+        <setting id="skin.refocus.View508HideInfo" type="bool">false</setting>
+        <setting id="skin.nebula.DisableFanart" type="bool">false</setting>
+        <setting id="skin.blackglassnova.EnableKioskMode" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.0.title" type="bool">false</setting>
+        <setting id="skin.nebula.BlackGlassMode" type="bool">false</setting>
+        <setting id="skin.apptv.libraryentry-movie" type="string"></setting>
+        <setting id="skin.blackglassnova.Home_DefaultBG" type="bool">false</setting>
+        <setting id="skin.blackglassnova.EnableClearArt" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Hide.Favourites" type="bool">true</setting>
+        <setting id="skin.1080xf.NextAired.Update" type="bool">false</setting>
+        <setting id="skin.1080xf.TVTunes.Enabled" type="bool">false</setting>
+        <setting id="skin.mimic.MusicHomeItem.WidgetType" type="string"></setting>
+        <setting id="skin.confluence.homepageMusicinfo" type="bool">true</setting>
+        <setting id="skin.apptv.libraryentry-tv" type="string"></setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.13.title" type="bool">false</setting>
+        <setting id="skin.confluence.HomepageHideRecentlyAddedVideo" type="bool">true</setting>
+        <setting id="skin.1080xf.HomeVideoTile1" type="bool">false</setting>
+        <setting id="skin.mimic.MovieHomeItem.Widget" type="string"></setting>
+        <setting id="skin.refocus.logos.tvshows.enable" type="bool">false</setting>
+        <setting id="skin.apptv.CustomAddon.5.Icon" type="string"></setting>
+        <setting id="skin.nebula.hide.plexbmc.19.title" type="bool">false</setting>
+        <setting id="skin.blackglassnova.QuitMenu_Hide_Sleep" type="bool">false</setting>
+        <setting id="skin.1080xf.HideShutdownButton" type="bool">true</setting>
+        <setting id="skin.refocus.overlay.tvshows.disable" type="bool">false</setting>
+        <setting id="skin.blackglassnova.ArtistView" type="bool">false</setting>
+        <setting id="skin.mimic.MusicHomeItem.Label" type="string"></setting>
+        <setting id="skin.1080xf.HideHomeSubmenuArrow" type="bool">false</setting>
+        <setting id="skin.refocus.fanart.global" type="bool">false</setting>
+        <setting id="skin.mimic.Custom1HomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.blackglassnova.Favourites.Hide" type="bool">true</setting>
+        <setting id="skin.1080xf.CustomHomePanel3" type="bool">false</setting>
         <setting id="skin.blackglassnova.hide.plexbmc.16.title" type="bool">false</setting>
+        <setting id="skin.conq.Scrollbars" type="bool">true</setting>
         <setting id="skin.mimic.PicturesHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.apptv.CustomTV.4.Icon" type="string"></setting>
         <setting id="skin.blackglassnova.plexbmc" type="bool">false</setting>
         <setting id="skin.confluence.HomepageHideRecentlyAddedAlbums" type="bool">true</setting>
-        <setting id="skin.refocus.HideFilenameFlagging" type="bool">false</setting>
-        <setting id="skin.refocus.fanart.global" type="bool">false</setting>
-        <setting id="skin.mimic.MovieHomeItem.Icon" type="string"></setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Yellow" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Music_Gallery" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Posters_Gallery" type="bool">false</setting>
+        <setting id="skin.conq.MusicFanart" type="bool">false</setting>
+        <setting id="skin.apptv.libraryentry-music" type="string"></setting>
+        <setting id="skin.confluence.Use_Startup_Playlist" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.8.title" type="bool">false</setting>
         <setting id="skin.mimic.TVShowHomeItem.WidgetLabel" type="string"></setting>
         <setting id="skin.refocus.FirstTimeRun" type="bool">true</setting>
+        <setting id="skin.mimic.Custom1HomeItem.Icon" type="string"></setting>
         <setting id="skin.nebula.Pictures.Hide" type="bool">true</setting>
         <setting id="skin.apptv.libraryentry-radio" type="string"></setting>
         <setting id="skin.confluence.View508HideInfo" type="bool">false</setting>
-        <setting id="skin.blackglassnova.EnableKioskMode" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Posters_Gallery" type="bool">false</setting>
-        <setting id="skin.conq.MusicFanart" type="bool">false</setting>
-        <setting id="skin.nebula.hide.plexbmc.7.title" type="bool">false</setting>
-        <setting id="skin.mimic.Custom1HomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.1080xf.TVTunes.Enabled" type="bool">false</setting>
+        <setting id="skin.blackglassnova.QuitMenu_Show_Settings" type="bool">false</setting>
+        <setting id="skin.nebula.hide.plexbmc.8.title" type="bool">false</setting>
         <setting id="skin.blackglassnova.Addons.Hide" type="bool">true</setting>
         <setting id="skin.confluence.HomeMenuNoProgramsButton" type="bool">true</setting>
         <setting id="skin.nebula.Fixed_HomeMenu" type="bool">false</setting>
@@ -709,44 +747,6 @@
         <setting id="skin.1080xf.HomeProgramTile3" type="bool">false</setting>
         <setting id="skin.refocus.ShowBackgroundVideo" type="bool">false</setting>
         <setting id="skin.nebula.hide.plexbmc.4.title" type="bool">false</setting>
-        <setting id="skin.nebula.plexbmc" type="bool">false</setting>
-        <setting id="skin.1080xf.HideShutdownButton" type="bool">true</setting>
-        <setting id="skin.mimic.Custom1HomeItem.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.Overlay.Color.Violet" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.0.title" type="bool">false</setting>
-        <setting id="skin.refocus.logos.tvshows.enable" type="bool">false</setting>
-        <setting id="skin.1080xf.HideHomeSubmenuArrow" type="bool">false</setting>
-        <setting id="skin.refocus.overlay.pvr" type="bool">false</setting>
-        <setting id="skin.blackglassnova.MusicPlayingFanart" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Weather.Hide" type="bool">true</setting>
-        <setting id="skin.1080xf.NextAired.Update" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Music_Gallery" type="bool">false</setting>
-        <setting id="skin.blackglassnova.DisableFanart" type="bool">false</setting>
-        <setting id="skin.refocus.overlay.files.disable" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.4.Icon" type="string"></setting>
-        <setting id="skin.conq.Overlays" type="bool">false</setting>
-        <setting id="skin.1080xf.HideHomeButtons" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.Label" type="string"></setting>
-        <setting id="skin.blackglassnova.QuitMenu_Hide_Sleep" type="bool">false</setting>
-        <setting id="skin.confluence.HomepageHideRecentlyAddedVideo" type="bool">true</setting>
-        <setting id="skin.refocus.keyboard.enable" type="bool">false</setting>
-        <setting id="skin.1080xf.CustomHomePanel3" type="bool">false</setting>
-        <setting id="skin.blackglassnova.EnableClearArt" type="bool">false</setting>
-        <setting id="skin.confluence.homepageMusicinfo" type="bool">true</setting>
-        <setting id="skin.blackglassnova.QuitMenu_Show_Settings" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.blackglassnova.Home_DefaultBG" type="bool">false</setting>
-        <setting id="skin.mimic.Custom1HomeItem.Icon" type="string"></setting>
-        <setting id="skin.nebula.hide.plexbmc.8.title" type="bool">false</setting>
-        <setting id="skin.nebula.BlackGlassMode" type="bool">false</setting>
-        <setting id="skin.refocus.View508HideInfo" type="bool">false</setting>
-        <setting id="skin.conq.DebugInfo" type="bool">false</setting>
-        <setting id="skin.conq.Scrollbars" type="bool">true</setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Yellow" type="bool">false</setting>
-        <setting id="skin.nebula.DisableFanart" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.8.title" type="bool">false</setting>
-        <setting id="skin.mimic.MusicHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.13.title" type="bool">false</setting>
         <setting id="skin.refocus.menu.playlist" type="bool">false</setting>
         <setting id="skin.mimic.PicturesHomeItem.BGType" type="string"></setting>
         <setting id="skin.refocus.HomeMenuNoVideosButton" type="bool">false</setting>
