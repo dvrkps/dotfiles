@@ -50,6 +50,8 @@ alias ...='cd ../../'
 
 alias t='tree'
 
+alias vim='nvim'
+
 alias mirrorlistgenerate='sudo reflector -l 20 --sort score -p http -p https --save /etc/pacman.d/mirrorlist'
 
 alias cdtiva='c;cd $tivapath;ll'
