@@ -6,6 +6,10 @@ export PATH=$PATH:$HOME/bin
 export GOPATH=$HOME
 export CDPATH=.:$HOME:/data:/usr/local/go:$GOPATH/src/github.com/golanghr:$GOPATH/src/github.com/dvrkps
 
+export EDITOR=nvim
+
+export DIFFPROG=nvim
+
 export bookspath='/data/books'
 export downloadspath='/data/downloads'
 export moviespath='/data/movies'
@@ -15,7 +19,6 @@ export tivapath='/data/torrents/tiva'
 export tvshowspath='/data/tvshows'
 
 
-export EDITOR=nvim
 
 
 # Make sure window sizes update correctly.
