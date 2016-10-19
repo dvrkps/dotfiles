@@ -79,14 +79,14 @@ alias torrents='transmission-daemon;transmission-remote-cli'
 alias mnt='sudo mona'
 
 # *** tvst *********************************************************
-alias cdtvst='c;cd $GOPATH/src/tvst;ll'
-alias tvst='workon tvst;$HOME/src/tvst/bin/tvst;deactivate'
-alias airings='workon tvst;$HOME/src/tvst/bin/airings_job;deactivate'
-alias subtitles='workon tvst;$HOME/src/tvst/bin/subtitles_job;deactivate;ls /data/torrents/tiva'
+# alias cdtvst='c;cd $GOPATH/src/tvst;ll'
+# alias tvst='workon tvst;$HOME/src/tvst/bin/tvst;deactivate'
+# alias airings='workon tvst;$HOME/src/tvst/bin/airings_job;deactivate'
+# alias subtitles='workon tvst;$HOME/src/tvst/bin/subtitles_job;deactivate;ls /data/torrents/tiva'
 
-alias tvstdebug='cat $HOME/src/tvst/logs/debug.log'
-alias tvsterror='cat $HOME/src/tvst/logs/errors.log'
-alias rmtvstlogs='rm $HOME/src/tvst/logs/* -rf'
+# alias tvstdebug='cat $HOME/src/tvst/logs/debug.log'
+# alias tvsterror='cat $HOME/src/tvst/logs/errors.log'
+# alias rmtvstlogs='rm $HOME/src/tvst/logs/* -rf'
 
 # *** python *******************************************************
 export WORKON_HOME=$HOME/.virtualenvs
