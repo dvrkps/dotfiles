@@ -72,7 +72,7 @@ source ~/.git-prompt.sh
 # *** apps *********************************************************
 alias bckp='becca -s /home/dvrkps/cloud -d /data/backup'
 alias bmi='bima -h 1.87 -g -kg'
-alias cigs='c;cigs -s 2012-02-03'
+alias cigs='cigs -s 2012-02-03'
 alias torrents='transmission-daemon;transmission-remote-cli'
 alias mnt='sudo mona'
 
