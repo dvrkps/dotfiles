@@ -4,7 +4,7 @@
 # Paths
 export PATH=$PATH:$HOME/bin
 export GOPATH=$HOME
-export CDPATH=.:$HOME:/data:$GOPATH/src/github.com/dvrkps
+export CDPATH=.:$HOME:/data:$GOPATH/src/github.com:$GOPATH/src/github.com/dvrkps
 
 export EDITOR=nvim
 
