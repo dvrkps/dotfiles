@@ -24,9 +24,6 @@ ln -sfrT ~/cloud/dotfiles/mplayer ~/.mplayer
 # sqlite3
 ln -sfr ~/cloud/dotfiles/sqliterc ~/.sqliterc
 
-# vim (~/.vim)
-ln -sfr ~/cloud/dotfiles/vimrc ~/.vim/vimrc
-
 # nvim
 ln -sfr ~/cloud/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 
