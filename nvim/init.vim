@@ -65,7 +65,7 @@ nmap <leader>g :Gstatus<cr>
 nmap <leader><leader>g :!git l<cr>
 
 " *** golang ***
-au BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
+au BufNewFile,BufRead *.go setlocal syntax=off noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
 
 let g:go_term_enabled = 1
