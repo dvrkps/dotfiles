@@ -4,6 +4,9 @@
         <audiovisual default="true">false</audiovisual>
         <subhearing default="true">false</subhearing>
     </accessibility>
+    <addons>
+        <unknownsources default="true">false</unknownsources>
+    </addons>
     <audiocds>
         <autoaction default="true">0</autoaction>
         <ejectonrip default="true">true</ejectonrip>
@@ -15,6 +18,7 @@
     <audiooutput>
         <ac3passthrough default="true">true</ac3passthrough>
         <ac3transcode default="true">false</ac3transcode>
+        <atempothreshold default="true">2</atempothreshold>
         <audiodevice default="true">ALSA:@</audiodevice>
         <channels default="true">1</channels>
         <config default="true">2</config>
@@ -29,9 +33,10 @@
         <processquality default="true">30</processquality>
         <samplerate default="true">48000</samplerate>
         <stereoupmix default="true">false</stereoupmix>
+        <streamnoise default="true">true</streamnoise>
         <streamsilence default="true">1</streamsilence>
-        <supportdtshdcpudecoding default="true">false</supportdtshdcpudecoding>
         <truehdpassthrough default="true">false</truehdpassthrough>
+        <volumesteps default="true">90</volumesteps>
     </audiooutput>
     <bluray>
         <playerregion default="true">1</playerregion>
@@ -100,10 +105,11 @@
             <level>0</level>
             <showhigherlevels>true</showhigherlevels>
         </eventlog>
-        <systemtotaluptime>161951</systemtotaluptime>
+        <systemtotaluptime>177017</systemtotaluptime>
     </general>
     <input>
-        <enablejoystick default="true">true</enablejoystick>
+        <asknewcontrollers default="true">true</asknewcontrollers>
+        <controllerpoweroff default="true">false</controllerpoweroff>
         <enablemouse default="true">true</enablemouse>
     </input>
     <locale>
@@ -123,14 +129,14 @@
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
-        <enablerssfeeds>false</enablerssfeeds>
+        <enablerssfeeds default="true">false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
         <skin>skin.aeon.nox.5</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
-        <soundskin default="true">resource.uisounds.confluence</soundskin>
+        <soundskin default="true">resource.uisounds.kodi</soundskin>
         <startupwindow default="true">10000</startupwindow>
         <stereostrength default="true">5</stereostrength>
     </lookandfeel>
@@ -160,7 +166,6 @@
         <crossfade default="true">0</crossfade>
         <crossfadealbumtracks default="true">true</crossfadealbumtracks>
         <queuebydefault default="true">false</queuebydefault>
-        <replaygainavoidclipping default="true">false</replaygainavoidclipping>
         <replaygainnogainpreamp default="true">89</replaygainnogainpreamp>
         <replaygainpreamp default="true">89</replaygainpreamp>
         <replaygaintype default="true">1</replaygaintype>
@@ -171,12 +176,11 @@
     <mymusic>
         <defaultlibview default="true"></defaultlibview>
         <songthumbinvis default="true">false</songthumbinvis>
-        <startwindow default="true">10501</startwindow>
         <playlist>
             <repeat>false</repeat>
             <shuffle>false</shuffle>
         </playlist>
-        <needsupdate>53</needsupdate>
+        <needsupdate>60</needsupdate>
     </mymusic>
     <myvideos>
         <extractchapterthumbs default="true">true</extractchapterthumbs>
@@ -208,6 +212,7 @@
         <displayresolution default="true">14</displayresolution>
         <generatethumbs default="true">true</generatethumbs>
         <showvideos default="true">true</showvideos>
+        <usetags default="true">true</usetags>
     </pictures>
     <powermanagement>
         <displaysoff>5</displaysoff>
@@ -217,7 +222,6 @@
     </powermanagement>
     <pvrmanager>
         <backendchannelorder default="true">true</backendchannelorder>
-        <enabled default="true">false</enabled>
         <hideconnectionlostwarning default="true">false</hideconnectionlostwarning>
         <syncchannelgroups default="true">true</syncchannelgroups>
         <usebackendchannelnumbers default="true">false</usebackendchannelnumbers>
@@ -239,7 +243,6 @@
         <fps default="true">0</fps>
         <playminimized default="true">true</playminimized>
         <scantime default="true">10</scantime>
-        <sendrdstrafficmsg default="true">false</sendrdstrafficmsg>
         <signalquality default="true">true</signalquality>
         <startlast default="true">0</startlast>
         <trafficadvisory default="true">false</trafficadvisory>
@@ -256,6 +259,8 @@
     <pvrrecord>
         <defaultlifetime default="true">99</defaultlifetime>
         <defaultpriority default="true">50</defaultpriority>
+        <grouprecordings default="true">true</grouprecordings>
+        <instantrecordaction default="true">0</instantrecordaction>
         <instantrecordtime default="true">120</instantrecordtime>
         <marginend default="true">0</marginend>
         <marginstart default="true">0</marginstart>
@@ -263,7 +268,7 @@
         <timernotifications default="true">true</timernotifications>
     </pvrrecord>
     <pvrtimers>
-        <timertypefilter default="true">true</timertypefilter>
+        <hidedisabledtimers default="true">false</hidedisabledtimers>
     </pvrtimers>
     <scrapers>
         <moviesdefault default="true">metadata.themoviedb.org</moviesdefault>
@@ -304,6 +309,7 @@
     </services>
     <slideshow>
         <displayeffects default="true">true</displayeffects>
+        <highqualitydownscaling default="true">false</highqualitydownscaling>
         <shuffle default="true">false</shuffle>
         <staytime default="true">5</staytime>
     </slideshow>
@@ -349,8 +355,7 @@
         <adjustrefreshrate default="true">0</adjustrefreshrate>
         <autoplaynextitem default="true">false</autoplaynextitem>
         <errorinaspect default="true">0</errorinaspect>
-        <hqscalers default="true">0</hqscalers>
-        <pauseafterrefreshchange default="true">0</pauseafterrefreshchange>
+        <hqscalers default="true">20</hqscalers>
         <preferdefaultflag default="true">true</preferdefaultflag>
         <prefervaapirender default="true">true</prefervaapirender>
         <quitstereomodeonstop default="true">true</quitstereomodeonstop>
@@ -362,218 +367,1051 @@
         <teletextenabled>false</teletextenabled>
         <teletextscale default="true">true</teletextscale>
         <useamcodec default="true">true</useamcodec>
+        <useamcodech264 default="true">0</useamcodech264>
+        <useamcodecmpeg2 default="true">0</useamcodecmpeg2>
+        <useamcodecmpeg4 default="true">800</useamcodecmpeg4>
         <usedisplayasclock default="true">false</usedisplayasclock>
         <usedxva2 default="true">true</usedxva2>
+        <usemediacodec default="true">true</usemediacodec>
+        <usemediacodecsurface default="true">true</usemediacodecsurface>
         <useomx default="true">true</useomx>
         <useomxplayer default="true">true</useomxplayer>
         <usevaapi default="true">true</usevaapi>
         <usevaapimpeg2 default="true">true</usevaapimpeg2>
         <usevaapimpeg4 default="true">true</usevaapimpeg4>
         <usevaapivc1 default="true">true</usevaapivc1>
-        <usevda default="true">true</usevda>
         <usevdpau default="true">true</usevdpau>
         <usevdpaumixer default="true">true</usevdpaumixer>
         <usevdpaumpeg2 default="true">true</usevdpaumpeg2>
         <usevdpaumpeg4 default="true">false</usevdpaumpeg4>
         <usevdpauvc1 default="true">true</usevdpauvc1>
-        <usevideotoolbox default="true">true</usevideotoolbox>
+        <usevtb default="true">true</usevtb>
     </videoplayer>
     <videoscreen>
         <blankdisplays default="true">false</blankdisplays>
+        <cms3dlut default="true"></cms3dlut>
+        <cmsenabled default="true">false</cmsenabled>
+        <cmsgamma default="true">220</cmsgamma>
+        <cmsgammamode default="true">0</cmsgammamode>
+        <cmslutsize default="true">6</cmslutsize>
+        <cmsmode default="true">0</cmsmode>
+        <cmsprimaries default="true">0</cmsprimaries>
+        <cmswhitepoint default="true">0</cmswhitepoint>
+        <delayrefreshchange default="true">0</delayrefreshchange>
+        <displayprofile default="true"></displayprofile>
+        <dither default="true">true</dither>
+        <ditherdepth default="true">8</ditherdepth>
         <fakefullscreen default="true">true</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <monitor default="true">Default</monitor>
+        <noofbuffers default="true">3</noofbuffers>
         <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
-        <resolution default="true">16</resolution>
+        <resolution>15</resolution>
         <screen default="true">0</screen>
-        <screenmode default="true">DESKTOP</screenmode>
+        <screenmode>WINDOW</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
-        <vsync default="true">3</vsync>
     </videoscreen>
     <weather>
         <addon default="true"></addon>
         <currentlocation default="true">1</currentlocation>
     </weather>
     <window>
-        <height default="true">480</height>
-        <width default="true">720</width>
+        <height>1198</height>
+        <width>1918</width>
     </window>
+    <viewstates>
+        <musicfiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicfiles>
+        <musiclastfm>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musiclastfm>
+        <musicnavalbums>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavalbums>
+        <musicnavartists>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavartists>
+        <musicnavsongs>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavsongs>
+        <pictures>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </pictures>
+        <programs>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </programs>
+        <videofiles>
+            <viewmode>65586</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>1</sortattributes>
+        </videofiles>
+        <videonavactors>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavactors>
+        <videonavepisodes>
+            <viewmode>65586</viewmode>
+            <sortmethod>21</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavepisodes>
+        <videonavgenres>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavgenres>
+        <videonavmusicvideos>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavmusicvideos>
+        <videonavseasons>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavseasons>
+        <videonavtitles>
+            <viewmode>131572</viewmode>
+            <sortmethod>27</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>1</sortattributes>
+        </videonavtitles>
+        <videonavtvshows>
+            <viewmode>65586</viewmode>
+            <sortmethod>27</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>1</sortattributes>
+        </videonavtvshows>
+        <videonavyears>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavyears>
+    </viewstates>
+    <resolutions>
+        <resolution>
+            <description>1920x1200@ 59.95 - Full Screen</description>
+            <subtitles>1158</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>59.950169</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x56</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1200 @ 59.95Hz</description>
+            <subtitles>1140</subtitles>
+            <pixelratio>0.969460</pixelratio>
+            <refreshrate>59.950169</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x56</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1080 @ 60.00Hz</description>
+            <subtitles>1026</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x57</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1080 @ 50.00Hz</description>
+            <subtitles>1026</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x58</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1080 @ 59.94Hz</description>
+            <subtitles>1026</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>59.940201</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x59</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1080i @ 30.00Hz</description>
+            <subtitles>1026</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x5a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1080i @ 25.00Hz</description>
+            <subtitles>1026</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x5b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1920x1080i @ 29.97Hz</description>
+            <subtitles>1026</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>29.970100</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x5c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1600x1200 @ 60.00Hz</description>
+            <subtitles>1140</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x5d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>1200</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1680x1050 @ 59.88Hz</description>
+            <subtitles>997</subtitles>
+            <pixelratio>0.969460</pixelratio>
+            <refreshrate>59.883251</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x5e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1600x1000 @ 60.01Hz</description>
+            <subtitles>950</subtitles>
+            <pixelratio>0.969460</pixelratio>
+            <refreshrate>60.008381</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x5f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>1000</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1280x1024 @ 75.02Hz</description>
+            <subtitles>972</subtitles>
+            <pixelratio>1.240909</pixelratio>
+            <refreshrate>75.024673</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x60</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1280x960 @ 60.00Hz</description>
+            <subtitles>912</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x61</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1152x864 @ 75.00Hz</description>
+            <subtitles>820</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>75.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x62</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>864</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1280x720 @ 60.00Hz</description>
+            <subtitles>684</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x63</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1280x720 @ 50.00Hz</description>
+            <subtitles>684</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x64</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1280x720 @ 59.94Hz</description>
+            <subtitles>684</subtitles>
+            <pixelratio>0.872514</pixelratio>
+            <refreshrate>59.940201</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x65</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1440x576i @ 25.00Hz</description>
+            <subtitles>547</subtitles>
+            <pixelratio>0.620455</pixelratio>
+            <refreshrate>25.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x66</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1024x768 @ 75.08Hz</description>
+            <subtitles>729</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>75.076218</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x67</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1024x768 @ 60.00Hz</description>
+            <subtitles>729</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>60.003841</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x68</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1440x480i @ 30.00Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>0.517045</pixelratio>
+            <refreshrate>30.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x69</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 1440x480i @ 29.97Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>0.517045</pixelratio>
+            <refreshrate>29.970030</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x6a</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 832x624 @ 74.55Hz</description>
+            <subtitles>592</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>74.551270</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x6b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>832</right>
+                <bottom>624</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 800x600 @ 75.00Hz</description>
+            <subtitles>570</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>75.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x6c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 800x600 @ 60.32Hz</description>
+            <subtitles>570</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>60.316540</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x6d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 720x576 @ 50.00Hz</description>
+            <subtitles>547</subtitles>
+            <pixelratio>1.240909</pixelratio>
+            <refreshrate>50.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x6e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 720x480 @ 60.00Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>1.034091</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x6f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 720x480 @ 59.94Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>1.034091</pixelratio>
+            <refreshrate>59.940060</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x70</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 640x480 @ 75.00Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>75.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x71</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 640x480 @ 60.00Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>60.000000</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x72</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 640x480 @ 59.94Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>1.163352</pixelratio>
+            <refreshrate>59.940479</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x73</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>HDMI-0: 720x400 @ 70.08Hz</description>
+            <subtitles>380</subtitles>
+            <pixelratio>0.861742</pixelratio>
+            <refreshrate>70.081657</refreshrate>
+            <output>HDMI-0</output>
+            <xrandrid>0x74</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>400</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <defaultvideosettings>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>0</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>1.000000</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <outputtoallspeakers>false</outputtoallspeakers>
+        <showsubtitles>true</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+    </defaultvideosettings>
+    <defaultaudiosettings>
+        <masterstreamtype>7</masterstreamtype>
+        <masterstreamtypesel>7</masterstreamtypesel>
+        <masterstreambase>0</masterstreambase>
+        <masterprocess_0_0>0</masterprocess_0_0>
+        <masterprocess_0_1>0</masterprocess_0_1>
+        <masterprocess_0_2>0</masterprocess_0_2>
+        <masterprocess_0_3>0</masterprocess_0_3>
+        <masterprocess_0_4>0</masterprocess_0_4>
+        <masterprocess_0_5>0</masterprocess_0_5>
+        <masterprocess_0_6>0</masterprocess_0_6>
+        <masterprocess_0_7>0</masterprocess_0_7>
+        <masterprocess_0_8>0</masterprocess_0_8>
+        <masterprocess_0_9>0</masterprocess_0_9>
+        <masterprocess_0_10>0</masterprocess_0_10>
+        <masterprocess_1_0>0</masterprocess_1_0>
+        <masterprocess_1_1>0</masterprocess_1_1>
+        <masterprocess_1_2>0</masterprocess_1_2>
+        <masterprocess_1_3>0</masterprocess_1_3>
+        <masterprocess_1_4>0</masterprocess_1_4>
+        <masterprocess_1_5>0</masterprocess_1_5>
+        <masterprocess_1_6>0</masterprocess_1_6>
+        <masterprocess_1_7>0</masterprocess_1_7>
+        <masterprocess_1_8>0</masterprocess_1_8>
+        <masterprocess_1_9>0</masterprocess_1_9>
+        <masterprocess_1_10>0</masterprocess_1_10>
+        <masterprocess_2_0>0</masterprocess_2_0>
+        <masterprocess_2_1>0</masterprocess_2_1>
+        <masterprocess_2_2>0</masterprocess_2_2>
+        <masterprocess_2_3>0</masterprocess_2_3>
+        <masterprocess_2_4>0</masterprocess_2_4>
+        <masterprocess_2_5>0</masterprocess_2_5>
+        <masterprocess_2_6>0</masterprocess_2_6>
+        <masterprocess_2_7>0</masterprocess_2_7>
+        <masterprocess_2_8>0</masterprocess_2_8>
+        <masterprocess_2_9>0</masterprocess_2_9>
+        <masterprocess_2_10>0</masterprocess_2_10>
+        <masterprocess_3_0>0</masterprocess_3_0>
+        <masterprocess_3_1>0</masterprocess_3_1>
+        <masterprocess_3_2>0</masterprocess_3_2>
+        <masterprocess_3_3>0</masterprocess_3_3>
+        <masterprocess_3_4>0</masterprocess_3_4>
+        <masterprocess_3_5>0</masterprocess_3_5>
+        <masterprocess_3_6>0</masterprocess_3_6>
+        <masterprocess_3_7>0</masterprocess_3_7>
+        <masterprocess_3_8>0</masterprocess_3_8>
+        <masterprocess_3_9>0</masterprocess_3_9>
+        <masterprocess_3_10>0</masterprocess_3_10>
+        <masterprocess_4_0>0</masterprocess_4_0>
+        <masterprocess_4_1>0</masterprocess_4_1>
+        <masterprocess_4_2>0</masterprocess_4_2>
+        <masterprocess_4_3>0</masterprocess_4_3>
+        <masterprocess_4_4>0</masterprocess_4_4>
+        <masterprocess_4_5>0</masterprocess_4_5>
+        <masterprocess_4_6>0</masterprocess_4_6>
+        <masterprocess_4_7>0</masterprocess_4_7>
+        <masterprocess_4_8>0</masterprocess_4_8>
+        <masterprocess_4_9>0</masterprocess_4_9>
+        <masterprocess_4_10>0</masterprocess_4_10>
+        <masterprocess_5_0>0</masterprocess_5_0>
+        <masterprocess_5_1>0</masterprocess_5_1>
+        <masterprocess_5_2>0</masterprocess_5_2>
+        <masterprocess_5_3>0</masterprocess_5_3>
+        <masterprocess_5_4>0</masterprocess_5_4>
+        <masterprocess_5_5>0</masterprocess_5_5>
+        <masterprocess_5_6>0</masterprocess_5_6>
+        <masterprocess_5_7>0</masterprocess_5_7>
+        <masterprocess_5_8>0</masterprocess_5_8>
+        <masterprocess_5_9>0</masterprocess_5_9>
+        <masterprocess_5_10>0</masterprocess_5_10>
+        <masterprocess_6_0>0</masterprocess_6_0>
+        <masterprocess_6_1>0</masterprocess_6_1>
+        <masterprocess_6_2>0</masterprocess_6_2>
+        <masterprocess_6_3>0</masterprocess_6_3>
+        <masterprocess_6_4>0</masterprocess_6_4>
+        <masterprocess_6_5>0</masterprocess_6_5>
+        <masterprocess_6_6>0</masterprocess_6_6>
+        <masterprocess_6_7>0</masterprocess_6_7>
+        <masterprocess_6_8>0</masterprocess_6_8>
+        <masterprocess_6_9>0</masterprocess_6_9>
+        <masterprocess_6_10>0</masterprocess_6_10>
+        <masterprocess_7_0>0</masterprocess_7_0>
+        <masterprocess_7_1>0</masterprocess_7_1>
+        <masterprocess_7_2>0</masterprocess_7_2>
+        <masterprocess_7_3>0</masterprocess_7_3>
+        <masterprocess_7_4>0</masterprocess_7_4>
+        <masterprocess_7_5>0</masterprocess_7_5>
+        <masterprocess_7_6>0</masterprocess_7_6>
+        <masterprocess_7_7>0</masterprocess_7_7>
+        <masterprocess_7_8>0</masterprocess_7_8>
+        <masterprocess_7_9>0</masterprocess_7_9>
+        <masterprocess_7_10>0</masterprocess_7_10>
+    </defaultaudiosettings>
     <skinsettings>
-        <setting id="skin.mimic.VideosHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.mimic.TVShowHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.nebula.HidePlayingMusicInfo" type="bool">false</setting>
-        <setting id="skin.apptv.show-scrollbar" type="string"></setting>
-        <setting id="skin.nebula.hide.plexbmc.2.title" type="bool">false</setting>
-        <setting id="skin.maximinimalism.DebugGrid" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Videos.Hide" type="bool">true</setting>
-        <setting id="skin.blackglassnova.PVR_Enabled" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Home_DefaultBG" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.3.Label" type="string"></setting>
-        <setting id="skin.mimic.LiveTVHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.mimic.Startup_Playlist_Path" type="string"></setting>
-        <setting id="skin.apptv.CustomMovies.1.Path" type="string"></setting>
+        <setting id="skin.mimic.PicturesHomeItem.SubMenu" type="string"></setting>
+        <setting id="skin.conq.Overlays" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.4.Path" type="string"></setting>
+        <setting id="skin.blackglassnova.Shelf.Addons" type="bool">false</setting>
+        <setting id="skin.confluence.Show_SlideShow_Paused" type="bool">true</setting>
+        <setting id="skin.blackglassnova.ArtistView" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.1.Icon" type="string"></setting>
+        <setting id="skin.1080xf.BackgroundVideo" type="bool">false</setting>
+        <setting id="skin.blackglassnova.QuitMenu_Hide_Sleep" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeVideoTile6" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Violet" type="bool">true</setting>
+        <setting id="skin.mimic.Custom1HomeItem.Widget" type="string"></setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.10.title" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.3.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomMusic.1.Label" type="string"></setting>
+        <setting id="skin.nebula.DisableFanart" type="bool">false</setting>
+        <setting id="skin.apptv.CustomRadio.5.Icon" type="string"></setting>
+        <setting id="skin.apptv.CustomTVShow.3.Path" type="string"></setting>
+        <setting id="skin.nebula.Favourites.Hide" type="bool">true</setting>
+        <setting id="skin.confluence.HideFilenameFlagging" type="bool">false</setting>
         <setting id="skin.apptv.CustomTVShow.4.Path" type="string"></setting>
-        <setting id="skin.transparency.Menu_PlayDisc_Sub_Custom6" type="bool">false</setting>
-        <setting id="skin.mimic.PicturesHomeItem.Label" type="string"></setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom8" type="bool">false</setting>
-        <setting id="skin.transparency.Menu_PlayDisc_Sub_Custom8" type="bool">false</setting>
-        <setting id="skin.transparency.cross1" type="bool">false</setting>
-        <setting id="skin.blackglassnova.QuitMenu_Hide_Timer" type="bool">false</setting>
-        <setting id="skin.blackglassnova.DebugGrid" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeVideoTile1" type="bool">false</setting>
-        <setting id="skin.conq.MusicFanart" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeTVShowTile1" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Overlay.Color.White" type="bool">true</setting>
-        <setting id="skin.apptv.shelf-addonimages" type="string"></setting>
-        <setting id="skin.nebula.Radio.Hide" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.1.Label" type="string"></setting>
+        <setting id="skin.refocus.View508HideInfo" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.InfoLine" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.Icon" type="string"></setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.17.title" type="bool">false</setting>
+        <setting id="skin.nebula.53_UseBanners" type="bool">false</setting>
+        <setting id="skin.apptv.libraryentry-music" type="string"></setting>
+        <setting id="skin.refocus.fanart.global" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMovies.2.Icon" type="string"></setting>
+        <setting id="skin.mimic.PicturesHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.1080xf.HomeMusicTile3" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMovies.1.Label" type="string"></setting>
+        <setting id="skin.refocus.nextaired.disable" type="bool">true</setting>
         <setting id="skin.apptv.CustomMovies.3.Icon" type="string"></setting>
-        <setting id="skin.blackglassnova.Hide_Watched_Marks" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.WidgetLabel" type="string"></setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom5" type="bool">false</setting>
+        <setting id="skin.apptv.libraryentry-musicvideo" type="string"></setting>
+        <setting id="skin.1080xf.Guide.HideClock" type="bool">false</setting>
+        <setting id="skin.apptv.CustomRadio.5.Path" type="string"></setting>
+        <setting id="skin.apptv.startup-screenpath" type="string"></setting>
+        <setting id="skin.1080xf.HideOptionsButton" type="bool">false</setting>
+        <setting id="skin.1080xf.PlayTrailer.Minimized" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.1.Icon" type="string"></setting>
+        <setting id="skin.mimic.MusicHomeItem.WidgetType" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.InfoLine" type="string"></setting>
+        <setting id="skin.apptv.CustomAddon.3.Icon" type="string"></setting>
+        <setting id="skin.apptv.CustomAddon.3.Path" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.Label" type="string"></setting>
+        <setting id="skin.conq.WatchedFlags" type="bool">false</setting>
+        <setting id="skin.mimic.LiveTVHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.conq.KioskMode" type="bool">false</setting>
+        <setting id="skin.nebula.hide.plexbmc.2.title" type="bool">false</setting>
+        <setting id="skin.mimic.PicturesHomeItem.InfoLine" type="string"></setting>
+        <setting id="skin.mimic.MusicHomeItem.Label" type="string"></setting>
+        <setting id="skin.apptv.libraryentry-tvshow" type="string"></setting>
+        <setting id="skin.confluence.HomepageHideRecentlyAddedAlbums" type="bool">true</setting>
+        <setting id="skin.blackglassnova.Pictures.Hide" type="bool">true</setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Green" type="bool">false</setting>
+        <setting id="skin.mimic.MovieHomeItem.BGType" type="string"></setting>
+        <setting id="skin.1080xf.OSDVisualisation.Enabled" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMovies.2.Path" type="string"></setting>
+        <setting id="skin.1080xf.HomeMusic" type="bool">true</setting>
+        <setting id="skin.apptv.CustomMusic.4.Icon" type="string"></setting>
         <setting id="skin.apptv.shelf-movieimages" type="string">Icon</setting>
-        <setting id="skin.1080xf.TVGuide.ClearLogo" type="bool">true</setting>
-        <setting id="skin.refocus.fanart.visualization" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.5.Path" type="string"></setting>
-        <setting id="skin.confluence.homepageMusicinfo" type="bool">true</setting>
-        <setting id="skin.1080xf.HomeTVShowTile4" type="bool">false</setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom7" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMovies.3.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.0.title" type="bool">false</setting>
-        <setting id="skin.mimic.PicturesHomeItem.Disable" type="string">True</setting>
-        <setting id="skin.transparency.Menu_PlayDisc_Sub_Custom7" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.4.Icon" type="string"></setting>
+        <setting id="skin.1080xf.GlobalRSS.Top" type="bool">false</setting>
+        <setting id="skin.refocus.homepageMusicinfo" type="bool">false</setting>
+        <setting id="skin.1080xf.SpinControl.Default" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Red" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.4.Path" type="string"></setting>
+        <setting id="skin.apptv.libraryentry-tv" type="string"></setting>
+        <setting id="skin.blackglassnova.QuitMenu_Show_Settings" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.16.title" type="bool">false</setting>
+        <setting id="skin.conq.FadeArtistFanart" type="bool">false</setting>
+        <setting id="skin.apptv.CustomAddon.1.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomRadio.5.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomTV.5.Path" type="string"></setting>
+        <setting id="skin.mimic.MusicHomeItem.Icon" type="string"></setting>
+        <setting id="skin.nebula.plexbmc" type="bool">false</setting>
+        <setting id="skin.nebula.Pictures.Hide" type="bool">true</setting>
+        <setting id="skin.mimic.TVShowHomeItem.SubMenu" type="string"></setting>
+        <setting id="skin.refocus.sortletter.enable" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMovies.1.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomMovies.5.Icon" type="string"></setting>
+        <setting id="skin.blackglassnova.Overlay.Color.Blue" type="bool">false</setting>
+        <setting id="skin.apptv.background-custom" type="string"></setting>
+        <setting id="skin.mimic.MusicLibraryPath" type="string"></setting>
+        <setting id="skin.mimic.VideosHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.refocus.overlay.tvshows.disable" type="bool">false</setting>
+        <setting id="skin.refocus.HomepageHideRecentlyAddedAlbums" type="bool">false</setting>
+        <setting id="skin.nebula.BlackGlassMode" type="bool">false</setting>
+        <setting id="skin.blackglassnova.plexbmc" type="bool">false</setting>
+        <setting id="skin.refocus.overlay.pvr" type="bool">false</setting>
+        <setting id="skin.nebula.hide.plexbmc.14.title" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Addons.Hide" type="bool">true</setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Azure" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Videos.Hide" type="bool">true</setting>
+        <setting id="skin.apptv.startup-playlistpath" type="string"></setting>
+        <setting id="skin.nebula.hide.plexbmc.19.title" type="bool">false</setting>
+        <setting id="skin.mimic.WeatherFanartDir" type="string"></setting>
+        <setting id="skin.mimic.VideosHomeItem.Path" type="string"></setting>
+        <setting id="skin.conq.DebugInfo" type="bool">false</setting>
+        <setting id="skin.nebula.Movies.Background.EnableRandomFanart" type="bool">false</setting>
+        <setting id="skin.refocus.banner.movies.enable" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.2.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomRadio.3.Label" type="string"></setting>
+        <setting id="skin.1080xf.HomeMusicTile1" type="bool">false</setting>
+        <setting id="skin.refocus.home.nowplaying" type="bool">false</setting>
+        <setting id="skin.nebula.Queue.Hide" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeProgramTile4" type="bool">false</setting>
+        <setting id="skin.nebula.DisableIconViewInfos" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.8.title" type="bool">false</setting>
+        <setting id="skin.nebula.hide.plexbmc.15.title" type="bool">false</setting>
+        <setting id="skin.mimic.PicturesHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.mimic.Startup_Playlist_Path" type="string"></setting>
+        <setting id="skin.1080xf.HomeMovies" type="bool">false</setting>
+        <setting id="skin.mimic.MusicHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.1080xf.HomeVideoTile4" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.2.Label" type="string"></setting>
+        <setting id="skin.1080xf.HideHomeButtons" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Overlay.Color.Violet" type="bool">false</setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom5" type="bool">false</setting>
+        <setting id="skin.apptv.background-customweather" type="string"></setting>
+        <setting id="skin.1080xf.StartupPlaylist" type="bool">false</setting>
+        <setting id="skin.nebula.52_ShowPlot" type="bool">false</setting>
+        <setting id="skin.mimic.MusicHomeItem.BGType" type="string"></setting>
+        <setting id="skin.1080xf.HideHomeSubmenuArrow" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Overlay.Color.Fuchsia" type="bool">false</setting>
+        <setting id="skin.refocus.HideFilenameFlagging" type="bool">false</setting>
+        <setting id="skin.mimic.LiveTVHomeItem.WidgetType" type="string"></setting>
+        <setting id="skin.1080xf.HideHomeProfileInfo" type="bool">true</setting>
+        <setting id="skin.apptv.shelf-addonimages" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.mimic.Custom6HomeItem.Disable" type="string"></setting>
+        <setting id="skin.refocus.dev.overlay" type="bool">false</setting>
+        <setting id="skin.apptv.CustomRadio.1.Path" type="string"></setting>
+        <setting id="skin.nebula.Fixed_HomeMenu" type="bool">false</setting>
+        <setting id="skin.blackglassnova.TVShows.Hide" type="bool">false</setting>
+        <setting id="skin.mimic.TVShowHomeItem.WidgetType" type="string"></setting>
+        <setting id="skin.blackglassnova.53_BigGrid" type="bool">true</setting>
+        <setting id="skin.apptv.CustomMusic.4.Label" type="string"></setting>
+        <setting id="skin.1080xf.TVGuide.ClearArt" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeProgramTile7" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.19.title" type="bool">false</setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom8" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Overlay.Color.Yellow" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.5.Path" type="string"></setting>
+        <setting id="skin.blackglassnova.Movies.Hide" type="bool">false</setting>
+        <setting id="skin.refocus.artistslideshow.disable" type="bool">true</setting>
+        <setting id="skin.nebula.OverlayTransparency80" type="bool">false</setting>
+        <setting id="skin.blackglassnova.QuitMenu_Hide_Reboot" type="bool">true</setting>
+        <setting id="skin.apptv.startup-screentype" type="string">Skin Image</setting>
+        <setting id="skin.blackglassnova.MusicPlayingFanart" type="bool">false</setting>
         <setting id="skin.conq.HideSettings" type="bool">false</setting>
         <setting id="skin.maximinimalism.keepMusicMenuActive" type="string"></setting>
-        <setting id="skin.refocus.tvtunes.enable" type="bool">false</setting>
-        <setting id="skin.refocus.keyboard.enable" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.blackglassnova.Pictures.Hide" type="bool">true</setting>
-        <setting id="skin.confluence.HomepageHideRecentlyAddedVideo" type="bool">true</setting>
-        <setting id="skin.apptv.shelf-musicimages" type="string">Icon</setting>
-        <setting id="skin.blackglassnova.Hide.LibraryUpdate.Button" type="bool">false</setting>
-        <setting id="skin.confluence.HomeMenuNoVideosButton" type="bool">true</setting>
-        <setting id="skin.refocus.overlay.files.disable" type="bool">false</setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom6" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Overlay.Color.Red" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.2.Icon" type="string"></setting>
-        <setting id="skin.apptv.background-custom" type="string"></setting>
-        <setting id="skin.apptv.shelf-tvshowimages" type="string"></setting>
-        <setting id="skin.mimic.VideosHomeItem.Icon" type="string"></setting>
-        <setting id="skin.blackglassnova.Episodes_Gallery" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Overlay.Color.Violet" type="bool">false</setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom4" type="bool">false</setting>
-        <setting id="skin.mimic.MovieHomeItem.SubMenu" type="string"></setting>
-        <setting id="skin.1080xf.CustomHomePanel3" type="bool">false</setting>
-        <setting id="skin.mimic.TVShowHomeItem.Icon" type="string"></setting>
-        <setting id="skin.apptv.background-customweather" type="string"></setting>
-        <setting id="skin.apptv.shelf-tvshowimgtyp" type="string">Thumbnail</setting>
-        <setting id="skin.1080xf.OSDMusicAlt.Enabled" type="bool">false</setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom3" type="bool">false</setting>
-        <setting id="skin.maximinimalism.showRecentMusicItems" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.apptv.CustomTV.3.Path" type="string"></setting>
-        <setting id="skin.refocus.HomeMenuNoProgramsButton" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.Label" type="string"></setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom9" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Clips.Show" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.3.Icon" type="string"></setting>
-        <setting id="skin.mimic.PicturesHomeItem.WidgetLabel" type="string"></setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom10" type="bool">false</setting>
-        <setting id="skin.1080xf.TVTunes.Enabled" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.3.Label" type="string"></setting>
-        <setting id="skin.apptv.CustomRadio.5.Path" type="string"></setting>
-        <setting id="skin.transparency.Menu_Custom3_Sub_Custom2" type="bool">false</setting>
-        <setting id="skin.1080xf.NextAired.Enabled" type="bool">false</setting>
-        <setting id="skin.nebula.Hide_Watched_Marks" type="bool">false</setting>
-        <setting id="skin.nebula.hide.plexbmc.8.title" type="bool">false</setting>
-        <setting id="skin.confluence.UseCustomBackground" type="bool">false</setting>
-        <setting id="skin.nebula.hide.plexbmc.3.title" type="bool">false</setting>
-        <setting id="skin.mimic.TVShowHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.nebula.hide.plexbmc.18.title" type="bool">false</setting>
-        <setting id="skin.refocus.shelf.enabled" type="bool">false</setting>
-        <setting id="skin.1080xf.UpdateArt.Enabled" type="bool">false</setting>
-        <setting id="skin.blackglassnova.SlideListToLeft" type="bool">false</setting>
-        <setting id="skin.nebula.VerticalHome" type="bool">false</setting>
-        <setting id="skin.1080xf.NextAired.Update" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Yellow" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Hide_Unwatched_Marks" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Posters_Gallery" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Hide.Favourites" type="bool">true</setting>
-        <setting id="skin.apptv.CustomRadio.4.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.EnableClearArt" type="bool">false</setting>
-        <setting id="skin.mimic.Custom1HomeItem.Path" type="string"></setting>
-        <setting id="skin.1080xf.ShowWeatherFanart" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTVShow.5.Label" type="string"></setting>
         <setting id="skin.mimic.LiveTVHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.refocus.HomepageHideRecentlyAddedVideo" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeHomeTile2" type="bool">false</setting>
-        <setting id="skin.refocus.HomeMenuNoMusicButton" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Music.Background.EnableRandomFanart" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.5.Icon" type="string"></setting>
-        <setting id="skin.refocus.fanart.weather" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.4.Label" type="string"></setting>
-        <setting id="skin.1080xf.GlobalRSS.Bottom" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.1.Path" type="string"></setting>
-        <setting id="skin.apptv.CustomMovies.5.Label" type="string"></setting>
-        <setting id="skin.blackglassnova.Weather.Hide" type="bool">true</setting>
+        <setting id="skin.mimic.PicturesHomeItem.Label" type="string"></setting>
+        <setting id="skin.confluence.HideVisualizationFanart" type="bool">false</setting>
+        <setting id="skin.apptv.show-scrollbar" type="string"></setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom6" type="bool">false</setting>
+        <setting id="skin.mimic.TVShowHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.blackglassnova.TVTunes.Enabled" type="bool">false</setting>
+        <setting id="skin.blackglassnova.DebugInfo" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTVShow.2.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomTV.3.Path" type="string"></setting>
+        <setting id="skin.maximinimalism.DebugGrid" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.5.title" type="bool">false</setting>
+        <setting id="skin.nebula.QuitMenu_Hide_Quit" type="bool">false</setting>
+        <setting id="skin.nebula.DVD.Hide" type="bool">true</setting>
         <setting id="skin.apptv.CustomTV.2.Path" type="string"></setting>
-        <setting id="skin.refocus.UseCustomBackground" type="bool">false</setting>
-        <setting id="skin.nebula.Hide_Unwatched_Marks" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.3.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.HidePlayingMusicInfo" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.5.Icon" type="string"></setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Blue" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.4.Path" type="string"></setting>
-        <setting id="skin.apptv.CustomMovies.4.Icon" type="string"></setting>
-        <setting id="skin.nebula.QuitMenu_Hide_Sleep" type="bool">false</setting>
-        <setting id="skin.apptv.CustomAddon.5.Label" type="string"></setting>
-        <setting id="skin.apptv.custom-watermark" type="string"></setting>
-        <setting id="skin.1080xf.HideShutdownButton" type="bool">true</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.13.title" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.7.title" type="bool">false</setting>
-        <setting id="skin.conq.Scrollbars" type="bool">true</setting>
-        <setting id="skin.apptv.CustomMusic.2.Icon" type="string"></setting>
-        <setting id="skin.blackglassnova.DisableFanart" type="bool">false</setting>
-        <setting id="skin.nebula.Shelf.Delay" type="bool">false</setting>
-        <setting id="skin.mimic.System.Fallback" type="string"></setting>
-        <setting id="skin.nebula.Weather.Hide" type="bool">true</setting>
-        <setting id="skin.apptv.CustomTVShow.4.Icon" type="string"></setting>
-        <setting id="skin.nebula.Shelf.Addons" type="bool">false</setting>
-        <setting id="skin.mimic.TVShowHomeItem.Label" type="string"></setting>
-        <setting id="skin.blackglassnova.EnableKioskMode" type="bool">false</setting>
-        <setting id="skin.mimic.Custom1HomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.blackglassnova.Channels.Hide" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeTVShowTile2" type="bool">false</setting>
-        <setting id="skin.mimic.Custom1HomeItem.WidgetLabel" type="string"></setting>
-        <setting id="skin.apptv.libraryentry-movie" type="string"></setting>
-        <setting id="skin.conq.WeatherFanart" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.5.Label" type="string"></setting>
-        <setting id="skin.blackglassnova.Queue.Hide" type="bool">false</setting>
-        <setting id="skin.refocus.menu.nowplaying" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.2.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.Hide.Shared" type="bool">false</setting>
-        <setting id="skin.mimic.LiveTVHomeItem.Label" type="string"></setting>
-        <setting id="skin.apptv.CustomMusic.3.Path" type="string"></setting>
-        <setting id="skin.confluence.ActivateTvTunes" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Favourites.Hide" type="bool">true</setting>
-        <setting id="skin.apptv.CustomTVShow.4.Label" type="string"></setting>
-        <setting id="skin.apptv.CustomTVShow.3.Path" type="string"></setting>
-        <setting id="skin.nebula.DisableFanart" type="bool">false</setting>
-        <setting id="skin.mimic.TVShowHomeItem.WidgetLabel" type="string"></setting>
-        <setting id="skin.apptv.CustomAddon.4.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomTVShow.3.Label" type="string"></setting>
+        <setting id="skin.conq.HideSubmenuHeading" type="bool">false</setting>
+        <setting id="skin.nebula.HidePlayingMusicInfo" type="bool">false</setting>
+        <setting id="skin.blackglassnova.EnableClearArt" type="bool">false</setting>
+        <setting id="skin.blackglassnova.EnableCdArt" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeProgramTile5" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Home_DefaultBG" type="bool">false</setting>
+        <setting id="skin.conq.MusicFanart" type="bool">false</setting>
+        <setting id="skin.mimic.TVShowHomeItem.Icon" type="string"></setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.11.title" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Weather.Hide" type="bool">true</setting>
+        <setting id="skin.1080xf.TVGuide.ClearLogo" type="bool">true</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.0.title" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeVideoTile1" type="bool">false</setting>
+        <setting id="skin.blackglassnova.PVR_Enabled" type="bool">false</setting>
+        <setting id="skin.transparency.Menu_PlayDisc_Sub_Custom6" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Hide_Watched_Marks" type="bool">false</setting>
+        <setting id="skin.blackglassnova.DebugGrid" type="bool">false</setting>
+        <setting id="skin.transparency.Menu_PlayDisc_Sub_Custom8" type="bool">false</setting>
+        <setting id="skin.confluence.FirstTimeRun" type="bool">true</setting>
+        <setting id="skin.mimic.MovieHomeItem.SubMenu" type="string"></setting>
+        <setting id="skin.1080xf.ShowWeatherFanartHome" type="bool">false</setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom7" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.WidgetType" type="string"></setting>
+        <setting id="skin.apptv.CustomTVShow.2.Icon" type="string"></setting>
+        <setting id="skin.refocus.tvtunes.enable" type="bool">false</setting>
+        <setting id="skin.nebula.Addons.Hide" type="bool">true</setting>
+        <setting id="skin.transparency.cross1" type="bool">false</setting>
+        <setting id="skin.blackglassnova.QuitMenu_Hide_Timer" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Hide.LibraryUpdate.Button" type="bool">false</setting>
+        <setting id="skin.nebula.Radio.Hide" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTVShow.5.Path" type="string"></setting>
+        <setting id="skin.apptv.shelf-musicimages" type="string">Icon</setting>
+        <setting id="skin.refocus.fanart.visualization" type="bool">false</setting>
         <setting id="skin.apptv.CustomTV.5.Label" type="string"></setting>
-        <setting id="skin.apptv.CustomTV.1.Path" type="string"></setting>
-        <setting id="skin.mimic.MusicHomeItem.Label" type="string"></setting>
-        <setting id="skin.refocus.FirstTimeRun" type="bool">true</setting>
+        <setting id="skin.apptv.CustomRadio.1.Label" type="string"></setting>
+        <setting id="skin.mimic.PicturesHomeItem.Disable" type="string">True</setting>
+        <setting id="skin.apptv.CustomMusic.5.Label" type="string"></setting>
+        <setting id="skin.1080xf.OSDMusicAlt.Enabled" type="bool">false</setting>
+        <setting id="skin.confluence.homepageMusicinfo" type="bool">true</setting>
+        <setting id="skin.blackglassnova.Hide_Unwatched_Marks" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Blue" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeTVShowTile4" type="bool">false</setting>
+        <setting id="skin.refocus.overlay.files.disable" type="bool">false</setting>
+        <setting id="skin.refocus.keyboard.enable" type="bool">false</setting>
+        <setting id="skin.blackglassnova.SlideListToLeft" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.apptv.shelf-tvshowimages" type="string"></setting>
+        <setting id="skin.apptv.CustomMovies.3.Path" type="string"></setting>
+        <setting id="skin.transparency.Menu_PlayDisc_Sub_Custom7" type="bool">false</setting>
         <setting id="skin.1080xf.Guide.HideUserImage" type="bool">false</setting>
-        <setting id="skin.confluence.HomeMenuNoProgramsButton" type="bool">true</setting>
-        <setting id="skin.blackglassnova.QuitMenu_Hide_Sleep" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Channels.Hide" type="bool">false</setting>
+        <setting id="skin.refocus.HomepageHideRecentlyAddedVideo" type="bool">false</setting>
+        <setting id="skin.confluence.HomepageHideRecentlyAddedVideo" type="bool">true</setting>
+        <setting id="skin.blackglassnova.Episodes_Gallery" type="bool">false</setting>
+        <setting id="skin.refocus.fanart.weather" type="bool">false</setting>
+        <setting id="skin.refocus.menu.nowplaying" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTVShow.1.Label" type="string"></setting>
+        <setting id="skin.mimic.VideosHomeItem.Icon" type="string"></setting>
+        <setting id="skin.1080xf.GlobalRSS.Bottom" type="bool">false</setting>
+        <setting id="skin.confluence.HomeMenuNoVideosButton" type="bool">true</setting>
+        <setting id="skin.blackglassnova.Overlay.Color.Red" type="bool">false</setting>
+        <setting id="skin.1080xf.NextAired.Update" type="bool">false</setting>
+        <setting id="skin.refocus.UseCustomBackground" type="bool">false</setting>
+        <setting id="skin.1080xf.CustomHomePanel3" type="bool">false</setting>
+        <setting id="skin.apptv.shelf-tvshowimgtyp" type="string">Thumbnail</setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom4" type="bool">false</setting>
+        <setting id="skin.nebula.OverlayTransparency90" type="bool">false</setting>
+        <setting id="skin.mimic.TVShowHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.refocus.HomeMenuNoMusicButton" type="bool">false</setting>
+        <setting id="skin.conq.WeatherFanart" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeHomeTile2" type="bool">false</setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom3" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.1.Label" type="string"></setting>
+        <setting id="skin.refocus.HomeMenuNoProgramsButton" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Clips.Show" type="bool">false</setting>
+        <setting id="skin.apptv.CustomRadio.4.Label" type="string"></setting>
+        <setting id="skin.blackglassnova.Music.Background.EnableRandomFanart" type="bool">false</setting>
+        <setting id="skin.mimic.MovieHomeItem.WidgetType" type="string"></setting>
+        <setting id="skin.blackglassnova.Posters_Gallery" type="bool">false</setting>
+        <setting id="skin.apptv.CustomRadio.3.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomTVShow.5.Icon" type="string"></setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom9" type="bool">false</setting>
+        <setting id="skin.nebula.Hide_Unwatched_Marks" type="bool">false</setting>
+        <setting id="skin.1080xf.UpdateArt.Enabled" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMovies.5.Label" type="string"></setting>
+        <setting id="skin.confluence.UseCustomBackground" type="bool">false</setting>
+        <setting id="skin.apptv.CustomRadio.4.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomTV.1.Path" type="string"></setting>
+        <setting id="skin.nebula.Hide_Watched_Marks" type="bool">false</setting>
+        <setting id="skin.blackglassnova.HidePlayingMusicInfo" type="bool">false</setting>
+        <setting id="skin.mimic.Custom1HomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.1080xf.NextAired.Enabled" type="bool">false</setting>
+        <setting id="skin.maximinimalism.showRecentMusicItems" type="string"></setting>
+        <setting id="skin.apptv.CustomTV.5.Icon" type="string"></setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom2" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.3.Icon" type="string"></setting>
+        <setting id="skin.nebula.hide.plexbmc.3.title" type="bool">false</setting>
+        <setting id="skin.nebula.VerticalHome" type="bool">false</setting>
+        <setting id="skin.mimic.TVShowHomeItem.InfoLine" type="string"></setting>
+        <setting id="skin.transparency.Menu_Custom3_Sub_Custom10" type="bool">false</setting>
+        <setting id="skin.mimic.TVShowHomeItem.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomTVShow.1.Icon" type="string"></setting>
+        <setting id="skin.apptv.CustomMovies.4.Icon" type="string"></setting>
+        <setting id="skin.1080xf.TVTunes.Enabled" type="bool">false</setting>
+        <setting id="skin.blackglassnova.QuitMenu_Hide_Shutdown" type="bool">true</setting>
+        <setting id="skin.apptv.CustomTVShow.4.Icon" type="string"></setting>
+        <setting id="skin.nebula.QuitMenu_Hide_Sleep" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.Label" type="string"></setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Yellow" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Hide.Favourites" type="bool">true</setting>
+        <setting id="skin.blackglassnova.EnableKioskMode" type="bool">false</setting>
+        <setting id="skin.nebula.hide.plexbmc.18.title" type="bool">false</setting>
+        <setting id="skin.conq.Scrollbars" type="bool">true</setting>
+        <setting id="skin.nebula.Videos.Hide" type="bool">true</setting>
+        <setting id="skin.apptv.CustomTVShow.4.Label" type="string"></setting>
+        <setting id="skin.refocus.shelf.enabled" type="bool">false</setting>
         <setting id="skin.mimic.MusicHomeItem.Path" type="string"></setting>
-        <setting id="skin.refocus.fanart.global" type="bool">false</setting>
-        <setting id="skin.mimic.MovieHomeItem.Icon" type="string"></setting>
-        <setting id="skin.1080xf.Guide.HideClock" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.1.Icon" type="string"></setting>
-        <setting id="skin.apptv.CustomMovies.1.Label" type="string"></setting>
+        <setting id="skin.blackglassnova.Concerts.Show" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.2.Icon" type="string"></setting>
+        <setting id="skin.nebula.hide.plexbmc.8.title" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.13.title" type="bool">false</setting>
+        <setting id="skin.nebula.Weather.Hide" type="bool">true</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.7.title" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Overlay.Color.White" type="bool">true</setting>
+        <setting id="skin.mimic.Custom1HomeItem.Path" type="string"></setting>
+        <setting id="skin.apptv.custom-watermark" type="string"></setting>
+        <setting id="skin.apptv.libraryentry-radio" type="string"></setting>
+        <setting id="skin.mimic.PicturesHomeItem.Widget" type="string"></setting>
+        <setting id="skin.1080xf.ShowWeatherFanart" type="bool">false</setting>
+        <setting id="skin.mimic.LiveTVHomeItem.Label" type="string"></setting>
+        <setting id="skin.1080xf.HideShutdownButton" type="bool">true</setting>
+        <setting id="skin.apptv.CustomAddon.3.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomAddon.5.Label" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.Path" type="string"></setting>
+        <setting id="skin.refocus.FirstTimeRun" type="bool">true</setting>
+        <setting id="skin.confluence.ActivateTvTunes" type="bool">false</setting>
+        <setting id="skin.mimic.System.Fallback" type="string"></setting>
+        <setting id="skin.apptv.CustomMusic.2.Icon" type="string"></setting>
+        <setting id="skin.apptv.CustomMusic.1.Path" type="string"></setting>
+        <setting id="skin.nebula.Shelf.Delay" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeTVShowTile2" type="bool">false</setting>
+        <setting id="skin.blackglassnova.DisableFanart" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.2.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomRadio.1.Icon" type="string"></setting>
+        <setting id="skin.nebula.Shelf.Addons" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTVShow.2.Path" type="string"></setting>
+        <setting id="skin.confluence.HomeMenuNoProgramsButton" type="bool">true</setting>
+        <setting id="skin.confluence.Use_Startup_Playlist" type="bool">false</setting>
+        <setting id="skin.blackglassnova.Queue.Hide" type="bool">false</setting>
+        <setting id="skin.mimic.Custom1HomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.blackglassnova.Favourites.Hide" type="bool">true</setting>
+        <setting id="skin.1080xf.HomeTVShowTile1" type="bool">false</setting>
+        <setting id="skin.refocus.AutoScroll" type="bool">false</setting>
+        <setting id="skin.apptv.libraryentry-movie" type="string"></setting>
+        <setting id="skin.mimic.MusicHomeItem.Disable" type="string">True</setting>
+        <setting id="skin.mimic.LiveTVHomeItem.MultiFanart" type="string"></setting>
+        <setting id="skin.blackglassnova.Hide.Shared" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTV.3.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomAddon.4.Label" type="string"></setting>
+        <setting id="skin.1080xf.HomePrograms" type="bool">true</setting>
         <setting id="skin.apptv.CustomAddon.1.Label" type="string"></setting>
         <setting id="skin.blackglassnova.hide.plexbmc.4.title" type="bool">false</setting>
         <setting id="skin.apptv.CustomRadio.2.Icon" type="string"></setting>
@@ -602,155 +1440,8 @@
         <setting id="skin.apptv.CustomAddon.4.Icon" type="string"></setting>
         <setting id="skin.apptv.CustomMovies.5.Path" type="string"></setting>
         <setting id="skin.apptv.CustomMovies.4.Label" type="string"></setting>
-        <setting id="skin.mimic.MusicHomeItem.BGType" type="string"></setting>
-        <setting id="skin.apptv.CustomTV.2.Label" type="string"></setting>
-        <setting id="skin.nebula.Queue.Hide" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMovies.2.Path" type="string"></setting>
-        <setting id="skin.refocus.View508HideInfo" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMovies.5.Icon" type="string"></setting>
-        <setting id="skin.refocus.homepageMusicinfo" type="bool">false</setting>
-        <setting id="skin.mimic.LiveTVHomeItem.WidgetLabel" type="string"></setting>
-        <setting id="skin.conq.Overlays" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.17.title" type="bool">false</setting>
-        <setting id="skin.conq.DebugInfo" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.mimic.Custom1HomeItem.Widget" type="string"></setting>
-        <setting id="skin.mimic.VideosHomeItem.Path" type="string"></setting>
-        <setting id="skin.mimic.PicturesHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.nebula.DisableIconViewInfos" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.16.title" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Overlay.Color.Blue" type="bool">false</setting>
-        <setting id="skin.1080xf.HideHomeButtons" type="bool">false</setting>
-        <setting id="skin.nebula.Favourites.Hide" type="bool">true</setting>
-        <setting id="skin.apptv.libraryentry-tv" type="string"></setting>
-        <setting id="skin.apptv.libraryentry-music" type="string"></setting>
-        <setting id="skin.refocus.overlay.pvr" type="bool">false</setting>
-        <setting id="skin.mimic.MusicHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.blackglassnova.Addons.Hide" type="bool">true</setting>
-        <setting id="skin.nebula.BlackGlassMode" type="bool">false</setting>
-        <setting id="skin.nebula.hide.plexbmc.19.title" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.1.Label" type="string"></setting>
-        <setting id="skin.1080xf.StartupPlaylist" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeMusicTile3" type="bool">false</setting>
-        <setting id="skin.nebula.hide.plexbmc.15.title" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Green" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeVideoTile6" type="bool">false</setting>
-        <setting id="skin.apptv.CustomAddon.3.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.QuitMenu_Show_Settings" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.5.Path" type="string"></setting>
-        <setting id="skin.conq.FadeArtistFanart" type="bool">false</setting>
-        <setting id="skin.apptv.startup-screenpath" type="string"></setting>
-        <setting id="skin.mimic.TVShowHomeItem.SubMenu" type="string"></setting>
-        <setting id="skin.1080xf.HideHomeSubmenuArrow" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeMusic" type="bool">true</setting>
-        <setting id="skin.refocus.overlay.tvshows.disable" type="bool">false</setting>
-        <setting id="skin.conq.WatchedFlags" type="bool">false</setting>
-        <setting id="skin.nebula.Pictures.Hide" type="bool">true</setting>
-        <setting id="skin.apptv.CustomMusic.5.Path" type="string"></setting>
-        <setting id="skin.refocus.sortletter.enable" type="bool">false</setting>
-        <setting id="skin.1080xf.HideOptionsButton" type="bool">false</setting>
-        <setting id="skin.confluence.Show_SlideShow_Paused" type="bool">true</setting>
-        <setting id="skin.blackglassnova.Overlay.Color.Fuchsia" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.8.title" type="bool">false</setting>
-        <setting id="skin.apptv.CustomAddon.1.Path" type="string"></setting>
-        <setting id="skin.1080xf.HomeProgramTile7" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeVideoTile4" type="bool">false</setting>
-        <setting id="skin.confluence.Use_Startup_Playlist" type="bool">false</setting>
-        <setting id="skin.nebula.OverlayTransparency90" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Concerts.Show" type="bool">false</setting>
-        <setting id="skin.mimic.MusicLibraryPath" type="string"></setting>
-        <setting id="skin.mimic.Custom6HomeItem.Disable" type="string"></setting>
-        <setting id="skin.apptv.CustomRadio.1.Icon" type="string"></setting>
-        <setting id="skin.refocus.AutoScroll" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.10.title" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.4.Icon" type="string"></setting>
-        <setting id="skin.1080xf.SpinControl.Default" type="bool">false</setting>
         <setting id="skin.apptv.CustomMusic.3.Label" type="string"></setting>
-        <setting id="skin.1080xf.HomePrograms" type="bool">true</setting>
-        <setting id="skin.apptv.CustomMusic.1.Path" type="string"></setting>
-        <setting id="skin.mimic.LiveTVHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.blackglassnova.ArtistView" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.1.Icon" type="string"></setting>
-        <setting id="skin.apptv.startup-playlistpath" type="string"></setting>
-        <setting id="skin.apptv.CustomAddon.3.Icon" type="string"></setting>
-        <setting id="skin.blackglassnova.Shelf.Addons" type="bool">false</setting>
-        <setting id="skin.apptv.libraryentry-radio" type="string"></setting>
-        <setting id="skin.1080xf.PlayTrailer.Minimized" type="bool">false</setting>
-        <setting id="skin.mimic.PicturesHomeItem.Widget" type="string"></setting>
-        <setting id="skin.refocus.nextaired.disable" type="bool">true</setting>
-        <setting id="skin.1080xf.BackgroundVideo" type="bool">false</setting>
-        <setting id="skin.nebula.53_UseBanners" type="bool">false</setting>
-        <setting id="skin.nebula.Videos.Hide" type="bool">true</setting>
-        <setting id="skin.mimic.MovieHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.nebula.Addons.Hide" type="bool">true</setting>
-        <setting id="skin.apptv.CustomTV.2.Icon" type="string"></setting>
-        <setting id="skin.apptv.CustomMusic.2.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.QuitMenu_Hide_Shutdown" type="bool">true</setting>
-        <setting id="skin.apptv.CustomMovies.2.Icon" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.BGType" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.Path" type="string"></setting>
-        <setting id="skin.apptv.CustomTVShow.1.Icon" type="string"></setting>
         <setting id="skin.confluence.ShowBackgroundVis" type="bool">true</setting>
-        <setting id="skin.1080xf.GlobalRSS.Top" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Violet" type="bool">true</setting>
-        <setting id="skin.1080xf.HideHomeProfileInfo" type="bool">true</setting>
-        <setting id="skin.blackglassnova.plexbmc" type="bool">false</setting>
-        <setting id="skin.conq.KioskMode" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeProgramTile4" type="bool">false</setting>
-        <setting id="skin.confluence.HomepageHideRecentlyAddedAlbums" type="bool">true</setting>
-        <setting id="skin.nebula.Movies.Background.EnableRandomFanart" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.1.Label" type="string"></setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Red" type="bool">false</setting>
-        <setting id="skin.blackglassnova.53_BigGrid" type="bool">true</setting>
-        <setting id="skin.nebula.OverlayTransparency80" type="bool">false</setting>
-        <setting id="skin.mimic.MusicHomeItem.Icon" type="string"></setting>
-        <setting id="skin.apptv.libraryentry-tvshow" type="string"></setting>
-        <setting id="skin.confluence.HideFilenameFlagging" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.5.Label" type="string"></setting>
-        <setting id="skin.apptv.CustomMusic.4.Icon" type="string"></setting>
-        <setting id="skin.refocus.artistslideshow.disable" type="bool">true</setting>
-        <setting id="skin.blackglassnova.Overlay.Color.Yellow" type="bool">false</setting>
-        <setting id="skin.mimic.PicturesHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.1080xf.HomeMusicTile1" type="bool">false</setting>
-        <setting id="skin.apptv.startup-screentype" type="string">Skin Image</setting>
-        <setting id="skin.refocus.dev.overlay" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.4.Path" type="string"></setting>
-        <setting id="skin.mimic.TVShowHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.blackglassnova.TVShows.Hide" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.3.Label" type="string"></setting>
-        <setting id="skin.refocus.banner.movies.enable" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeMovies" type="bool">false</setting>
-        <setting id="skin.nebula.Fixed_HomeMenu" type="bool">false</setting>
-        <setting id="skin.blackglassnova.QuitMenu_Hide_Reboot" type="bool">true</setting>
-        <setting id="skin.confluence.HideVisualizationFanart" type="bool">false</setting>
-        <setting id="skin.mimic.WeatherFanartDir" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.Label" type="string"></setting>
-        <setting id="skin.refocus.HideFilenameFlagging" type="bool">false</setting>
-        <setting id="skin.refocus.home.nowplaying" type="bool">false</setting>
-        <setting id="skin.nebula.QuitMenu_Hide_Quit" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.19.title" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeProgramTile5" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.5.title" type="bool">false</setting>
-        <setting id="skin.nebula.plexbmc" type="bool">false</setting>
-        <setting id="skin.blackglassnova.EnableCdArt" type="bool">false</setting>
-        <setting id="skin.apptv.libraryentry-musicvideo" type="string"></setting>
-        <setting id="skin.apptv.CustomMusic.4.Label" type="string"></setting>
-        <setting id="skin.refocus.HomepageHideRecentlyAddedAlbums" type="bool">false</setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.11.title" type="bool">false</setting>
-        <setting id="skin.1080xf.ShowWeatherFanartHome" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.5.Label" type="string"></setting>
-        <setting id="skin.nebula.DVD.Hide" type="bool">true</setting>
-        <setting id="skin.1080xf.OSDVisualisation.Enabled" type="bool">false</setting>
-        <setting id="skin.blackglassnova.MusicPlayingFanart" type="bool">false</setting>
-        <setting id="skin.conq.HideSubmenuHeading" type="bool">false</setting>
-        <setting id="skin.confluence.FirstTimeRun" type="bool">true</setting>
-        <setting id="skin.blackglassnova.DebugInfo" type="bool">false</setting>
-        <setting id="skin.blackglassnova.TVTunes.Enabled" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTV.1.Label" type="string"></setting>
-        <setting id="skin.mimic.MusicHomeItem.Disable" type="string">True</setting>
-        <setting id="skin.1080xf.TVGuide.ClearArt" type="bool">false</setting>
-        <setting id="skin.nebula.52_ShowPlot" type="bool">false</setting>
-        <setting id="skin.mimic.PicturesHomeItem.SubMenu" type="string"></setting>
         <setting id="skin.apptv.CustomRadio.4.Icon" type="string"></setting>
         <setting id="skin.nebula.Tv.Hide" type="bool">false</setting>
         <setting id="skin.mimic.VideosHomeItem.BGType" type="string"></setting>
@@ -770,14 +1461,6 @@
         <setting id="skin.mimic.TVShowHomeItem.Path" type="string"></setting>
         <setting id="skin.apptv.CustomRadio.2.Path" type="string"></setting>
         <setting id="skin.apptv.CustomRadio.2.Label" type="string"></setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Azure" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Movies.Hide" type="bool">false</setting>
-        <setting id="skin.apptv.CustomAddon.3.Label" type="string"></setting>
-        <setting id="skin.nebula.hide.plexbmc.14.title" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.5.Icon" type="string"></setting>
-        <setting id="skin.mimic.MusicHomeItem.WidgetType" type="string"></setting>
-        <setting id="skin.apptv.CustomMusic.2.Label" type="string"></setting>
-        <setting id="skin.apptv.CustomTVShow.2.Label" type="string"></setting>
         <setting id="skin.refocus.HomeMenuNoMovieButton" type="bool">false</setting>
         <setting id="skin.mimic.MovieHomeItem.WidgetLabel" type="string"></setting>
         <setting id="skin.mimic.MusicHomeItem.InfoLine" type="string"></setting>
@@ -2358,669 +3041,6 @@
         <setting id="skin.blackglassnova.Tv.Icon" type="string"></setting>
         <setting id="skin.blackglassnova.Radio.Icon" type="string"></setting>
     </skinsettings>
-    <resolutions>
-        <resolution>
-            <description>1920x1200@ 59.95 - Full Screen</description>
-            <subtitles>1158</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <refreshrate>59.950169</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x56</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1200</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1200 @ 59.95Hz</description>
-            <subtitles>1140</subtitles>
-            <pixelratio>0.969460</pixelratio>
-            <refreshrate>59.950169</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x56</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1200</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1080 @ 60.00Hz</description>
-            <subtitles>1026</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>60.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x57</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1080 @ 50.00Hz</description>
-            <subtitles>1026</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>50.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x58</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1080 @ 59.94Hz</description>
-            <subtitles>1026</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>59.940201</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x59</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1080i @ 30.00Hz</description>
-            <subtitles>1026</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>30.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x5a</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1080i @ 25.00Hz</description>
-            <subtitles>1026</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>25.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x5b</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1920x1080i @ 29.97Hz</description>
-            <subtitles>1026</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>29.970100</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x5c</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1600x1200 @ 60.00Hz</description>
-            <subtitles>1140</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>60.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x5d</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1600</right>
-                <bottom>1200</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1680x1050 @ 59.88Hz</description>
-            <subtitles>997</subtitles>
-            <pixelratio>0.969460</pixelratio>
-            <refreshrate>59.883251</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x5e</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1680</right>
-                <bottom>1050</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1600x1000 @ 60.01Hz</description>
-            <subtitles>950</subtitles>
-            <pixelratio>0.969460</pixelratio>
-            <refreshrate>60.008381</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x5f</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1600</right>
-                <bottom>1000</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1280x1024 @ 75.02Hz</description>
-            <subtitles>972</subtitles>
-            <pixelratio>1.240909</pixelratio>
-            <refreshrate>75.024673</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x60</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>1024</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1280x960 @ 60.00Hz</description>
-            <subtitles>912</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>60.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x61</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>960</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1152x864 @ 75.00Hz</description>
-            <subtitles>820</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>75.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x62</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1152</right>
-                <bottom>864</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1280x720 @ 60.00Hz</description>
-            <subtitles>684</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>60.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x63</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1280x720 @ 50.00Hz</description>
-            <subtitles>684</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>50.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x64</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1280x720 @ 59.94Hz</description>
-            <subtitles>684</subtitles>
-            <pixelratio>0.872514</pixelratio>
-            <refreshrate>59.940201</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x65</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1440x576i @ 25.00Hz</description>
-            <subtitles>547</subtitles>
-            <pixelratio>0.620455</pixelratio>
-            <refreshrate>25.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x66</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1440</right>
-                <bottom>576</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1024x768 @ 75.08Hz</description>
-            <subtitles>729</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>75.076218</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x67</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1024</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1024x768 @ 60.00Hz</description>
-            <subtitles>729</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>60.003841</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x68</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1024</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1440x480i @ 30.00Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>0.517045</pixelratio>
-            <refreshrate>30.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x69</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1440</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 1440x480i @ 29.97Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>0.517045</pixelratio>
-            <refreshrate>29.970030</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x6a</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1440</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 832x624 @ 74.55Hz</description>
-            <subtitles>592</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>74.551270</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x6b</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>832</right>
-                <bottom>624</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 800x600 @ 75.00Hz</description>
-            <subtitles>570</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>75.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x6c</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>800</right>
-                <bottom>600</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 800x600 @ 60.32Hz</description>
-            <subtitles>570</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>60.316540</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x6d</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>800</right>
-                <bottom>600</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 720x576 @ 50.00Hz</description>
-            <subtitles>547</subtitles>
-            <pixelratio>1.240909</pixelratio>
-            <refreshrate>50.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x6e</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>576</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 720x480 @ 60.00Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>1.034091</pixelratio>
-            <refreshrate>60.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x6f</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 720x480 @ 59.94Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>1.034091</pixelratio>
-            <refreshrate>59.940060</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x70</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 640x480 @ 75.00Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>75.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x71</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 640x480 @ 60.00Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>60.000000</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x72</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 640x480 @ 59.94Hz</description>
-            <subtitles>456</subtitles>
-            <pixelratio>1.163352</pixelratio>
-            <refreshrate>59.940479</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x73</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>HDMI-0: 720x400 @ 70.08Hz</description>
-            <subtitles>380</subtitles>
-            <pixelratio>0.861742</pixelratio>
-            <refreshrate>70.081657</refreshrate>
-            <output>HDMI-0</output>
-            <xrandrid>0x74</xrandrid>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>400</bottom>
-            </overscan>
-        </resolution>
-    </resolutions>
-    <defaultvideosettings>
-        <deinterlacemode>0</deinterlacemode>
-        <interlacemethod>1</interlacemethod>
-        <scalingmethod>1</scalingmethod>
-        <noisereduction>0.000000</noisereduction>
-        <postprocess>false</postprocess>
-        <sharpness>0.000000</sharpness>
-        <viewmode>0</viewmode>
-        <zoomamount>1.000000</zoomamount>
-        <pixelratio>1.000000</pixelratio>
-        <verticalshift>0.000000</verticalshift>
-        <volumeamplification>0.000000</volumeamplification>
-        <outputtoallspeakers>false</outputtoallspeakers>
-        <showsubtitles>true</showsubtitles>
-        <brightness>50.000000</brightness>
-        <contrast>50.000000</contrast>
-        <gamma>20.000000</gamma>
-        <audiodelay>0.000000</audiodelay>
-        <subtitledelay>0.000000</subtitledelay>
-        <nonlinstretch>false</nonlinstretch>
-        <stereomode>0</stereomode>
-    </defaultvideosettings>
-    <defaultaudiosettings>
-        <masterstreamtype>7</masterstreamtype>
-        <masterstreamtypesel>7</masterstreamtypesel>
-        <masterstreambase>0</masterstreambase>
-        <masterprocess_0_0>0</masterprocess_0_0>
-        <masterprocess_0_1>0</masterprocess_0_1>
-        <masterprocess_0_2>0</masterprocess_0_2>
-        <masterprocess_0_3>0</masterprocess_0_3>
-        <masterprocess_0_4>0</masterprocess_0_4>
-        <masterprocess_0_5>0</masterprocess_0_5>
-        <masterprocess_0_6>0</masterprocess_0_6>
-        <masterprocess_0_7>0</masterprocess_0_7>
-        <masterprocess_0_8>0</masterprocess_0_8>
-        <masterprocess_0_9>0</masterprocess_0_9>
-        <masterprocess_0_10>0</masterprocess_0_10>
-        <masterprocess_1_0>0</masterprocess_1_0>
-        <masterprocess_1_1>0</masterprocess_1_1>
-        <masterprocess_1_2>0</masterprocess_1_2>
-        <masterprocess_1_3>0</masterprocess_1_3>
-        <masterprocess_1_4>0</masterprocess_1_4>
-        <masterprocess_1_5>0</masterprocess_1_5>
-        <masterprocess_1_6>0</masterprocess_1_6>
-        <masterprocess_1_7>0</masterprocess_1_7>
-        <masterprocess_1_8>0</masterprocess_1_8>
-        <masterprocess_1_9>0</masterprocess_1_9>
-        <masterprocess_1_10>0</masterprocess_1_10>
-        <masterprocess_2_0>0</masterprocess_2_0>
-        <masterprocess_2_1>0</masterprocess_2_1>
-        <masterprocess_2_2>0</masterprocess_2_2>
-        <masterprocess_2_3>0</masterprocess_2_3>
-        <masterprocess_2_4>0</masterprocess_2_4>
-        <masterprocess_2_5>0</masterprocess_2_5>
-        <masterprocess_2_6>0</masterprocess_2_6>
-        <masterprocess_2_7>0</masterprocess_2_7>
-        <masterprocess_2_8>0</masterprocess_2_8>
-        <masterprocess_2_9>0</masterprocess_2_9>
-        <masterprocess_2_10>0</masterprocess_2_10>
-        <masterprocess_3_0>0</masterprocess_3_0>
-        <masterprocess_3_1>0</masterprocess_3_1>
-        <masterprocess_3_2>0</masterprocess_3_2>
-        <masterprocess_3_3>0</masterprocess_3_3>
-        <masterprocess_3_4>0</masterprocess_3_4>
-        <masterprocess_3_5>0</masterprocess_3_5>
-        <masterprocess_3_6>0</masterprocess_3_6>
-        <masterprocess_3_7>0</masterprocess_3_7>
-        <masterprocess_3_8>0</masterprocess_3_8>
-        <masterprocess_3_9>0</masterprocess_3_9>
-        <masterprocess_3_10>0</masterprocess_3_10>
-        <masterprocess_4_0>0</masterprocess_4_0>
-        <masterprocess_4_1>0</masterprocess_4_1>
-        <masterprocess_4_2>0</masterprocess_4_2>
-        <masterprocess_4_3>0</masterprocess_4_3>
-        <masterprocess_4_4>0</masterprocess_4_4>
-        <masterprocess_4_5>0</masterprocess_4_5>
-        <masterprocess_4_6>0</masterprocess_4_6>
-        <masterprocess_4_7>0</masterprocess_4_7>
-        <masterprocess_4_8>0</masterprocess_4_8>
-        <masterprocess_4_9>0</masterprocess_4_9>
-        <masterprocess_4_10>0</masterprocess_4_10>
-        <masterprocess_5_0>0</masterprocess_5_0>
-        <masterprocess_5_1>0</masterprocess_5_1>
-        <masterprocess_5_2>0</masterprocess_5_2>
-        <masterprocess_5_3>0</masterprocess_5_3>
-        <masterprocess_5_4>0</masterprocess_5_4>
-        <masterprocess_5_5>0</masterprocess_5_5>
-        <masterprocess_5_6>0</masterprocess_5_6>
-        <masterprocess_5_7>0</masterprocess_5_7>
-        <masterprocess_5_8>0</masterprocess_5_8>
-        <masterprocess_5_9>0</masterprocess_5_9>
-        <masterprocess_5_10>0</masterprocess_5_10>
-        <masterprocess_6_0>0</masterprocess_6_0>
-        <masterprocess_6_1>0</masterprocess_6_1>
-        <masterprocess_6_2>0</masterprocess_6_2>
-        <masterprocess_6_3>0</masterprocess_6_3>
-        <masterprocess_6_4>0</masterprocess_6_4>
-        <masterprocess_6_5>0</masterprocess_6_5>
-        <masterprocess_6_6>0</masterprocess_6_6>
-        <masterprocess_6_7>0</masterprocess_6_7>
-        <masterprocess_6_8>0</masterprocess_6_8>
-        <masterprocess_6_9>0</masterprocess_6_9>
-        <masterprocess_6_10>0</masterprocess_6_10>
-        <masterprocess_7_0>0</masterprocess_7_0>
-        <masterprocess_7_1>0</masterprocess_7_1>
-        <masterprocess_7_2>0</masterprocess_7_2>
-        <masterprocess_7_3>0</masterprocess_7_3>
-        <masterprocess_7_4>0</masterprocess_7_4>
-        <masterprocess_7_5>0</masterprocess_7_5>
-        <masterprocess_7_6>0</masterprocess_7_6>
-        <masterprocess_7_7>0</masterprocess_7_7>
-        <masterprocess_7_8>0</masterprocess_7_8>
-        <masterprocess_7_9>0</masterprocess_7_9>
-        <masterprocess_7_10>0</masterprocess_7_10>
-    </defaultaudiosettings>
-    <viewstates>
-        <musicfiles>
-            <viewmode>720896</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </musicfiles>
-        <musiclastfm>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </musiclastfm>
-        <musicnavalbums>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </musicnavalbums>
-        <musicnavartists>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </musicnavartists>
-        <musicnavsongs>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </musicnavsongs>
-        <pictures>
-            <viewmode>720896</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </pictures>
-        <programs>
-            <viewmode>720896</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </programs>
-        <videofiles>
-            <viewmode>65586</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>1</sortattributes>
-        </videofiles>
-        <videonavactors>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </videonavactors>
-        <videonavepisodes>
-            <viewmode>65586</viewmode>
-            <sortmethod>21</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </videonavepisodes>
-        <videonavgenres>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </videonavgenres>
-        <videonavmusicvideos>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </videonavmusicvideos>
-        <videonavseasons>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </videonavseasons>
-        <videonavtitles>
-            <viewmode>131572</viewmode>
-            <sortmethod>27</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>1</sortattributes>
-        </videonavtitles>
-        <videonavtvshows>
-            <viewmode>65586</viewmode>
-            <sortmethod>27</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>1</sortattributes>
-        </videonavtvshows>
-        <videonavyears>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
-        </videonavyears>
-    </viewstates>
     <audio>
         <mute>false</mute>
         <fvolumelevel>1.000000</fvolumelevel>
