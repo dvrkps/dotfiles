@@ -35,7 +35,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # *** apps ***
 bindsym $mod+b exec --no-startup-id chromium --no-proxy-server
 bindsym $mod+Shift+b exec --no-startup-id chromium --incognito --no-proxy-server
-bindsym $mod+x exec --no-startup-id kodi
+bindsym $mod+x exec --no-startup-id kodi -fs
 
 # kill focused window
 bindsym $mod+q kill
