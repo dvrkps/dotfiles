@@ -98,19 +98,20 @@
     <general>
         <addonbrokenfilter default="true">true</addonbrokenfilter>
         <addonforeignfilter default="true">false</addonforeignfilter>
-        <addonnotifications>false</addonnotifications>
+        <addonnotifications default="true">false</addonnotifications>
         <addonupdates default="true">0</addonupdates>
         <settinglevel>3</settinglevel>
         <eventlog>
             <level>0</level>
             <showhigherlevels>true</showhigherlevels>
         </eventlog>
-        <systemtotaluptime>177017</systemtotaluptime>
+        <systemtotaluptime>230398</systemtotaluptime>
     </general>
     <input>
         <asknewcontrollers default="true">true</asknewcontrollers>
         <controllerpoweroff default="true">false</controllerpoweroff>
         <enablemouse default="true">true</enablemouse>
+        <rumblenotify default="true">false</rumblenotify>
     </input>
     <locale>
         <audiolanguage default="true">original</audiolanguage>
@@ -132,7 +133,7 @@
         <enablerssfeeds default="true">false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
-        <skin>skin.aeon.nox.5</skin>
+        <skin default="true">skin.estuary</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
@@ -190,7 +191,7 @@
         <replacelabels default="true">true</replacelabels>
         <selectaction default="true">1</selectaction>
         <stackvideos default="true">false</stackvideos>
-        <watchmodemovies>1</watchmodemovies>
+        <watchmodemovies>2</watchmodemovies>
         <watchmodetvshows>1</watchmodetvshows>
         <watchmodemusicvideos>0</watchmodemusicvideos>
         <playlist>
@@ -209,7 +210,7 @@
         <usehttpproxy default="true">false</usehttpproxy>
     </network>
     <pictures>
-        <displayresolution default="true">14</displayresolution>
+        <displayresolution>16</displayresolution>
         <generatethumbs default="true">true</generatethumbs>
         <showvideos default="true">true</showvideos>
         <usetags default="true">true</usetags>
@@ -314,6 +315,7 @@
         <staytime default="true">5</staytime>
     </slideshow>
     <smb>
+        <maxprotocol default="true">0</maxprotocol>
         <winsserver default="true">0.0.0.0</winsserver>
         <workgroup default="true">WORKGROUP</workgroup>
     </smb>
@@ -399,16 +401,16 @@
         <cmswhitepoint default="true">0</cmswhitepoint>
         <delayrefreshchange default="true">0</delayrefreshchange>
         <displayprofile default="true"></displayprofile>
-        <dither default="true">true</dither>
+        <dither default="true">false</dither>
         <ditherdepth default="true">8</ditherdepth>
         <fakefullscreen default="true">true</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <monitor default="true">Default</monitor>
         <noofbuffers default="true">3</noofbuffers>
         <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
-        <resolution>15</resolution>
+        <resolution default="true">16</resolution>
         <screen default="true">0</screen>
-        <screenmode>WINDOW</screenmode>
+        <screenmode default="true">DESKTOP</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
     </videoscreen>
     <weather>
@@ -463,7 +465,7 @@
             <sortattributes>0</sortattributes>
         </programs>
         <videofiles>
-            <viewmode>65586</viewmode>
+            <viewmode>66036</viewmode>
             <sortmethod>1</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>1</sortattributes>
@@ -475,8 +477,8 @@
             <sortattributes>0</sortattributes>
         </videonavactors>
         <videonavepisodes>
-            <viewmode>65586</viewmode>
-            <sortmethod>21</sortmethod>
+            <viewmode>65591</viewmode>
+            <sortmethod>23</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>0</sortattributes>
         </videonavepisodes>
@@ -505,8 +507,8 @@
             <sortattributes>1</sortattributes>
         </videonavtitles>
         <videonavtvshows>
-            <viewmode>65586</viewmode>
-            <sortmethod>27</sortmethod>
+            <viewmode>65591</viewmode>
+            <sortmethod>29</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>1</sortattributes>
         </videonavtvshows>
@@ -1082,55 +1084,55 @@
         <masterprocess_7_10>0</masterprocess_7_10>
     </defaultaudiosettings>
     <skinsettings>
-        <setting id="skin.mimic.PicturesHomeItem.SubMenu" type="string"></setting>
-        <setting id="skin.conq.Overlays" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.4.Path" type="string"></setting>
-        <setting id="skin.blackglassnova.Shelf.Addons" type="bool">false</setting>
-        <setting id="skin.confluence.Show_SlideShow_Paused" type="bool">true</setting>
-        <setting id="skin.blackglassnova.ArtistView" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.1.Icon" type="string"></setting>
-        <setting id="skin.1080xf.BackgroundVideo" type="bool">false</setting>
-        <setting id="skin.blackglassnova.QuitMenu_Hide_Sleep" type="bool">false</setting>
-        <setting id="skin.1080xf.HomeVideoTile6" type="bool">false</setting>
-        <setting id="skin.blackglassnova.Highlighted.Color.Violet" type="bool">true</setting>
-        <setting id="skin.mimic.Custom1HomeItem.Widget" type="string"></setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.10.title" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMusic.3.Path" type="string"></setting>
-        <setting id="skin.apptv.CustomMusic.1.Label" type="string"></setting>
-        <setting id="skin.nebula.DisableFanart" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.5.Icon" type="string"></setting>
-        <setting id="skin.apptv.CustomTVShow.3.Path" type="string"></setting>
-        <setting id="skin.nebula.Favourites.Hide" type="bool">true</setting>
-        <setting id="skin.confluence.HideFilenameFlagging" type="bool">false</setting>
-        <setting id="skin.apptv.CustomTVShow.4.Path" type="string"></setting>
-        <setting id="skin.refocus.View508HideInfo" type="bool">false</setting>
-        <setting id="skin.mimic.VideosHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.Icon" type="string"></setting>
-        <setting id="skin.blackglassnova.hide.plexbmc.17.title" type="bool">false</setting>
-        <setting id="skin.nebula.53_UseBanners" type="bool">false</setting>
-        <setting id="skin.apptv.libraryentry-music" type="string"></setting>
         <setting id="skin.refocus.fanart.global" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMovies.2.Icon" type="string"></setting>
+        <setting id="skin.conq.WatchedFlags" type="bool">false</setting>
+        <setting id="skin.refocus.View508HideInfo" type="bool">false</setting>
+        <setting id="skin.mimic.LiveTVHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.mimic.Custom1HomeItem.Widget" type="string"></setting>
+        <setting id="skin.mimic.PicturesHomeItem.SubMenu" type="string"></setting>
+        <setting id="skin.apptv.CustomTVShow.3.Path" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.Label" type="string"></setting>
+        <setting id="skin.apptv.CustomMusic.3.Path" type="string"></setting>
+        <setting id="skin.apptv.CustomAddon.3.Icon" type="string"></setting>
         <setting id="skin.mimic.PicturesHomeItem.MultiFanart" type="string"></setting>
-        <setting id="skin.1080xf.HomeMusicTile3" type="bool">false</setting>
-        <setting id="skin.apptv.CustomMovies.1.Label" type="string"></setting>
-        <setting id="skin.refocus.nextaired.disable" type="bool">true</setting>
-        <setting id="skin.apptv.CustomMovies.3.Icon" type="string"></setting>
-        <setting id="skin.apptv.libraryentry-musicvideo" type="string"></setting>
-        <setting id="skin.1080xf.Guide.HideClock" type="bool">false</setting>
-        <setting id="skin.apptv.CustomRadio.5.Path" type="string"></setting>
-        <setting id="skin.apptv.startup-screenpath" type="string"></setting>
-        <setting id="skin.1080xf.HideOptionsButton" type="bool">false</setting>
-        <setting id="skin.1080xf.PlayTrailer.Minimized" type="bool">false</setting>
+        <setting id="skin.1080xf.BackgroundVideo" type="bool">false</setting>
         <setting id="skin.apptv.CustomTV.1.Icon" type="string"></setting>
         <setting id="skin.mimic.MusicHomeItem.WidgetType" type="string"></setting>
         <setting id="skin.mimic.MovieHomeItem.InfoLine" type="string"></setting>
-        <setting id="skin.apptv.CustomAddon.3.Icon" type="string"></setting>
-        <setting id="skin.apptv.CustomAddon.3.Path" type="string"></setting>
-        <setting id="skin.mimic.MovieHomeItem.Label" type="string"></setting>
-        <setting id="skin.conq.WatchedFlags" type="bool">false</setting>
-        <setting id="skin.mimic.LiveTVHomeItem.WidgetLabel" type="string"></setting>
+        <setting id="skin.blackglassnova.Shelf.Addons" type="bool">false</setting>
+        <setting id="skin.apptv.libraryentry-music" type="string"></setting>
+        <setting id="skin.blackglassnova.QuitMenu_Hide_Sleep" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.4.Path" type="string"></setting>
+        <setting id="skin.apptv.startup-screenpath" type="string"></setting>
+        <setting id="skin.1080xf.HideOptionsButton" type="bool">false</setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.10.title" type="bool">false</setting>
+        <setting id="skin.confluence.HideFilenameFlagging" type="bool">false</setting>
+        <setting id="skin.nebula.DisableFanart" type="bool">false</setting>
+        <setting id="skin.nebula.Favourites.Hide" type="bool">true</setting>
         <setting id="skin.conq.KioskMode" type="bool">false</setting>
+        <setting id="skin.blackglassnova.ArtistView" type="bool">false</setting>
+        <setting id="skin.nebula.53_UseBanners" type="bool">false</setting>
+        <setting id="skin.mimic.VideosHomeItem.InfoLine" type="string"></setting>
+        <setting id="skin.mimic.MovieHomeItem.Icon" type="string"></setting>
+        <setting id="skin.confluence.Show_SlideShow_Paused" type="bool">true</setting>
+        <setting id="skin.apptv.CustomMovies.3.Icon" type="string"></setting>
+        <setting id="skin.apptv.libraryentry-musicvideo" type="string"></setting>
+        <setting id="skin.apptv.CustomMusic.1.Icon" type="string"></setting>
+        <setting id="skin.apptv.CustomAddon.3.Path" type="string"></setting>
+        <setting id="skin.conq.Overlays" type="bool">false</setting>
+        <setting id="skin.1080xf.PlayTrailer.Minimized" type="bool">false</setting>
+        <setting id="skin.1080xf.HomeMusicTile3" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMovies.1.Label" type="string"></setting>
+        <setting id="skin.refocus.nextaired.disable" type="bool">true</setting>
+        <setting id="skin.apptv.CustomMovies.2.Icon" type="string"></setting>
+        <setting id="skin.apptv.CustomRadio.5.Icon" type="string"></setting>
+        <setting id="skin.blackglassnova.Highlighted.Color.Violet" type="bool">true</setting>
+        <setting id="skin.apptv.CustomRadio.5.Path" type="string"></setting>
+        <setting id="skin.1080xf.HomeVideoTile6" type="bool">false</setting>
+        <setting id="skin.apptv.CustomMusic.1.Label" type="string"></setting>
+        <setting id="skin.blackglassnova.hide.plexbmc.17.title" type="bool">false</setting>
+        <setting id="skin.1080xf.Guide.HideClock" type="bool">false</setting>
+        <setting id="skin.apptv.CustomTVShow.4.Path" type="string"></setting>
         <setting id="skin.nebula.hide.plexbmc.2.title" type="bool">false</setting>
         <setting id="skin.mimic.PicturesHomeItem.InfoLine" type="string"></setting>
         <setting id="skin.mimic.MusicHomeItem.Label" type="string"></setting>
