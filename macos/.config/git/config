@@ -1,0 +1,35 @@
+[user]
+	name = Davor Kapsa
+	email = davor.kapsa@gmail.com
+
+[github]
+	user = dvrkps
+
+[core]
+	editor = nvim
+	autocrlf = input
+
+[color]
+	ui = true
+
+[merge]
+	tool = vimdiff
+
+[push]
+	default = simple
+
+[alias]
+	a   = add
+	br  = branch
+	cim = commit -m
+	co = checkout
+	contributors = shortlog --summary --numbered
+	l   = log --oneline -10
+	s   = status --short --branch
+	ru = remote update origin --prune
+
+[http]
+	cookiefile = ~/.config/git/.gitcookies
+
+[credential]
+	helper = osxkeychain
