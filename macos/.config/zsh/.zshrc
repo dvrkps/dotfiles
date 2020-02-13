@@ -22,12 +22,16 @@ alias ll='ls -alh'
 alias t='tree'
 
 function update_go_contributing_tools() {
+  cd ~
   go get golang.org/x/tools/cmd/go-contrib-init@latest
   go get golang.org/x/review/git-codereview@latest
+  cd -
 }
 
 function update_go_tools() {
+  cd ~
   go get github.com/golangci/golangci-lint/cmd/golangci-lint@latest
   go get honnef.co/go/tools/cmd/staticcheck@latest
   go get golang.org/x/tools/gopls@latest
+  cd -
 }
