@@ -35,3 +35,10 @@ function update_go_tools() {
   go get golang.org/x/tools/gopls@latest
   cd -
 }
+
+function update_gotip() {
+  cd ~
+  go get golang.org/dl/gotip@latest
+  gotip download
+  cd -
+}
