@@ -33,3 +33,5 @@
 
 [credential]
 	helper = osxkeychain
+[tag]
+	sort = -v:refname
