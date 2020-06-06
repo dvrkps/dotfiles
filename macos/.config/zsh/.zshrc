@@ -11,7 +11,7 @@ export EDITOR='nvim'
 export DIFFPROG='nvim'
 
 export PATH="$HOME/bin/:$HOME/go/bin:$PATH"
-export CDPATH="$HOME/go/src/github.com/dvrkps"
+export CDPATH="$HOME/go/src"
 
 PROMPT='%~ %# '
 
