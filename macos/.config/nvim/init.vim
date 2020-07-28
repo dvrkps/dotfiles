@@ -60,9 +60,9 @@ let g:go_term_enabled = 1
 let g:go_term_mode = "split"
 
 
-autocmd FileType go nmap <leader>r :terminal gotip run .<cr>i
-autocmd FileType go nmap <leader>t :terminal gotip test -v -race -cover<cr>i
+autocmd FileType go nmap <leader>r :terminal go run .<cr>i
+autocmd FileType go nmap <leader>t :terminal go test -v -race -cover<cr>i
 autocmd FileType go nmap <leader>c :syntax on<cr>:GoCoverageToggle<cr>:syntax off<cr>
-autocmd FileType go nmap <leader>b :terminal gotip test -run=XXX -bench=. -benchmem<cr>i
+autocmd FileType go nmap <leader>b :terminal go test -run=XXX -bench=. -benchmem<cr>i
 autocmd FileType go nmap <leader>l :terminal golangci-lint run --enable-all<cr>i
 
