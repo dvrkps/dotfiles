@@ -10,7 +10,7 @@ export LANG='en_US.UTF-8'
 export EDITOR='nvim'
 export DIFFPROG='nvim'
 
-export PATH="$HOME/bin/:$HOME/go/bin:$PATH"
+export PATH="$HOME/bin/:$HOME/go/bin:/usr/local/sbin:$PATH"
 export CDPATH="$HOME/go/src"
 
 PROMPT='%~ %# '
