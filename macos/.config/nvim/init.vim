@@ -25,6 +25,12 @@ autocmd! bufwritepost vimrc :source $MYVIMRC
 " terminal
 tnoremap <Esc> <C-\><C-n>
 
+" disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 " *** setting ***
 filetype plugin indent on
 syntax off
