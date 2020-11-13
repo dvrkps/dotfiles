@@ -59,6 +59,10 @@ set background=light
 " *** markdown ***
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" *** yaml ***
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " *** go ***
 au BufNewFile,BufRead *.go setlocal filetype=go noet ts=8 sw=8 sts=8
 let g:go_fmt_command = "goimports"
