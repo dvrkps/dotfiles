@@ -22,7 +22,6 @@ alias ll='ls -alh'
 alias t='tree'
 
 function update_go_tools() {
-  cd ~
   # gotip
   go install golang.org/dl/gotip@latest
   # contributing tools
@@ -32,5 +31,4 @@ function update_go_tools() {
   go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
   go install honnef.co/go/tools/cmd/staticcheck@latest
   go install golang.org/x/tools/gopls@latest
-  cd -
 }
