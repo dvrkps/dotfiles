@@ -29,7 +29,10 @@ vim.o.lazyredraw = true
 vim.o.number = true
 vim.o.relativenumber = true
 
--- vim.o.termguicolors = true 
+vim.o.updatetime = 250
+vim.wo.signcolumn = 'number'
+
+vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.background = 'light'
 vim.cmd('colorscheme solarized')
