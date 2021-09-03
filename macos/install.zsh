@@ -2,6 +2,9 @@
 
 ln -sfv ~/dotfiles/macos/.zshenv ~/.zshenv
 
+mkdir -p ~/.config/zsh
+ln -sfv ~/dotfiles/macos/.config/zsh/.zshrc ~/.config/zsh/.zshrc
+
 mkdir -p ~/.config/git
 ln -sfv ~/dotfiles/macos/.config/git/config ~/.config/git/config
 
