@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-echo "hello world"
+ln -sfv ~/dotfiles/macos/.zshenv ~/.zshenv
