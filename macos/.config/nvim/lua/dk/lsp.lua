@@ -29,16 +29,18 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
--- nvim_lsp.gopls.setup {
---  on_attach = on_attach,
--- }
 nvim_lsp.gopls.setup {
   settings = {
     gopls = {
       analyses = {
+        fieldalignment = true,
+	nilness = true,
+	shadow = true,
 	unusedparams = true,
+	unusedwrite = true,
       },
       staticcheck = true,
+      linksInHover = false,
     },
   },
   on_attach = on_attach,
