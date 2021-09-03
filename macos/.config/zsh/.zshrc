@@ -2,9 +2,6 @@ ulimit -S -n 4096
 
 autoload -Uz compinit && compinit
 
-zstyle ':completion:*:*:git:*' script ~/.config/zsh/git-completion.bash
-fpath=(~/.config/zsh $fpath)
-
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 export EDITOR='nvim'
