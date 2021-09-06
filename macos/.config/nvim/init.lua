@@ -1,9 +1,3 @@
-local silentAndNoremap = { silent = true, noremap = true }
-
-vim.api.nvim_set_keymap('', ';', '<Nop>', silentAndNoremap)
-vim.g.mapleader = ';'
-vim.g.maplocalleader = ';'
-
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 
