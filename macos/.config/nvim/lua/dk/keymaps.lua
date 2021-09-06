@@ -5,7 +5,7 @@ vim.api.nvim_set_keymap('i','jk','<esc>', silentAndNoremap)
 vim.api.nvim_set_keymap('n','<enter>','O<esc>j', silentAndNoremap)
 
 vim.api.nvim_set_keymap('n','<leader>w',':write<cr>', silentAndNoremap)
-vim.api.nvim_set_keymap('n','<leader>q',':quit<cr>', silentAndNoremap)
+vim.api.nvim_set_keymap('n','<leader>q',':quit!<cr>', silentAndNoremap)
 
 vim.api.nvim_set_keymap('n','<leader>b','<c-^>', silentAndNoremap)
 vim.api.nvim_set_keymap('n','<leader>bb',':buffers<cr>:b ', silentAndNoremap)
