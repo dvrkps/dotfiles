@@ -8,7 +8,7 @@ export EDITOR='nvim'
 export DIFFPROG='nvim'
 
 export PATH="$HOME/bin/:$HOME/go/bin:/usr/local/sbin:$PATH"
-export CDPATH="$HOME/go/src"
+export CDPATH="$HOME/go/src:$HOME/Code"
 
 PROMPT='%~ %# '
 
