@@ -13,7 +13,6 @@ vim.cmd('syntax off') -- vim.o.syntax not working for now
 
 vim.o.clipboard = 'unnamedplus' 
 
-vim.o.hidden = true
 vim.o.ignorecase =true
 vim.o.smartcase = true
 vim.o.smartindent = true
