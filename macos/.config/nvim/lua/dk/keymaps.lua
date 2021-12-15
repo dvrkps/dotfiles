@@ -12,8 +12,6 @@ vim.api.nvim_set_keymap('n','<leader>bb',':buffers<cr>:b ', silentAndNoremap)
 
 vim.api.nvim_set_keymap('n','<leader>vim',':edit $MYVIMRC<cr>', silentAndNoremap)
 
-vim.api.nvim_set_keymap('n','<leader><leader>',':nohlsearch<cr>', silentAndNoremap)
-
 vim.api.nvim_set_keymap('t','<esc>',[[<c-\><c-n>]], silentAndNoremap)
 vim.api.nvim_set_keymap('t','jk',[[<c-\><c-n><esc>]], silentAndNoremap)
 
