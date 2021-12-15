@@ -10,6 +10,10 @@ vim.api.nvim_set_keymap('n','<leader>q',':quit!<cr>', silentAndNoremap)
 vim.api.nvim_set_keymap('n','<leader>b','<c-^>', silentAndNoremap)
 vim.api.nvim_set_keymap('n','<leader>bb',':buffers<cr>:b ', silentAndNoremap)
 
+vim.api.nvim_set_keymap('n','<leader>ff',':Telescope find_files<cr>', silentAndNoremap)
+vim.api.nvim_set_keymap('n','<leader>fg',':Telescope live_grep<cr>', silentAndNoremap)
+vim.api.nvim_set_keymap('n','<leader>fb',':Telescope buffers<cr>', silentAndNoremap)
+
 vim.api.nvim_set_keymap('n','<leader>vim',':edit $MYVIMRC<cr>', silentAndNoremap)
 
 vim.api.nvim_set_keymap('t','<esc>',[[<c-\><c-n>]], silentAndNoremap)
@@ -18,3 +22,5 @@ vim.api.nvim_set_keymap('t','jk',[[<c-\><c-n><esc>]], silentAndNoremap)
 vim.cmd([[autocmd FileType go nmap <leader>r :terminal go run .<cr>]])
 vim.cmd([[autocmd FileType go nmap <leader>t :terminal go test -race -cover<cr>]])
 vim.cmd([[autocmd FileType go nmap <leader>y :terminal golangci-lint run<cr>]])
+
+
