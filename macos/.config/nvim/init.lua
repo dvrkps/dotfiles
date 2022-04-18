@@ -22,6 +22,8 @@ vim.o.lazyredraw = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 
+vim.o.laststatus = 3
+
 vim.o.number = true
 vim.o.relativenumber = true
 
