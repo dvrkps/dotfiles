@@ -1,25 +1,24 @@
-local silentAndNoremap = { silent = true, noremap = true }
+local set = function(mode, lhs, rhs, opts)
+	vim.keymap.set(mode,lhs,rhs,opts)
+end
 
-vim.api.nvim_set_keymap('i','jk','<esc>', silentAndNoremap)
+set('i','jk','<esc>')
+set('n','<enter>','O<esc>j')
 
-vim.api.nvim_set_keymap('n','<enter>','O<esc>j', silentAndNoremap)
+set('n','<leader>w',':write<cr>')
+-- set('n','<leader>q',':quit!<cr>')
 
-vim.api.nvim_set_keymap('n','<leader>w',':write<cr>', silentAndNoremap)
-vim.api.nvim_set_keymap('n','<leader>q',':quit!<cr>', silentAndNoremap)
+set('n','<leader>q',':quit!<cr>')
 
 local telescope = require('telescope.builtin')
 
-vim.keymap.set('n','<leader>ff',telescope.find_files, {})
-vim.keymap.set('n','<leader>fg',telescope.live_grep, {})
-vim.keymap.set('n', '<leader>fb',telescope.buffers,{})
+set('n','<leader>ff',telescope.find_files, {})
+set('n','<leader>fg',telescope.live_grep, {})
+set('n', '<leader>fb',telescope.buffers,{})
 
-vim.api.nvim_set_keymap('n','<leader>vim',':edit $MYVIMRC<cr>', silentAndNoremap)
-
-vim.api.nvim_set_keymap('t','<esc>',[[<c-\><c-n>]], silentAndNoremap)
-vim.api.nvim_set_keymap('t','jk',[[<c-\><c-n><esc>]], silentAndNoremap)
+set('t','<esc>',[[<c-\><c-n>]])
+set('t','jk',[[<c-\><c-n><esc>]])
 
 vim.cmd([[autocmd FileType go nmap <leader>r :terminal go run .<cr>]])
 vim.cmd([[autocmd FileType go nmap <leader>t :terminal go test -race -cover<cr>]])
 vim.cmd([[autocmd FileType go nmap <leader>y :terminal golangci-lint run<cr>]])
-
-
