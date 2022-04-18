@@ -7,12 +7,11 @@ vim.api.nvim_set_keymap('n','<enter>','O<esc>j', silentAndNoremap)
 vim.api.nvim_set_keymap('n','<leader>w',':write<cr>', silentAndNoremap)
 vim.api.nvim_set_keymap('n','<leader>q',':quit!<cr>', silentAndNoremap)
 
-vim.api.nvim_set_keymap('n','<leader>b','<c-^>', silentAndNoremap)
-vim.api.nvim_set_keymap('n','<leader>bb',':buffers<cr>:b ', silentAndNoremap)
+local telescope = require('telescope.builtin')
 
-vim.api.nvim_set_keymap('n','<leader>ff',':Telescope find_files<cr>', silentAndNoremap)
-vim.api.nvim_set_keymap('n','<leader>fg',':Telescope live_grep<cr>', silentAndNoremap)
-vim.api.nvim_set_keymap('n','<leader>fb',':Telescope buffers<cr>', silentAndNoremap)
+vim.keymap.set('n','<leader>ff',telescope.find_files, {})
+vim.keymap.set('n','<leader>fg',telescope.live_grep, {})
+vim.keymap.set('n', '<leader>fb',telescope.buffers,{})
 
 vim.api.nvim_set_keymap('n','<leader>vim',':edit $MYVIMRC<cr>', silentAndNoremap)
 
