@@ -19,6 +19,9 @@ vim.o.smartindent = true
 vim.o.wrap = false
 vim.o.lazyredraw = true
 
+vim.o.splitbelow = true
+vim.o.splitright = true
+
 vim.o.number = true
 vim.o.relativenumber = true
 
