@@ -44,6 +44,11 @@ vim.cmd([[au BufEnter * set fo-=c fo-=r fo-=o]])
 -- use tabs for Go files
 vim.cmd([[autocmd FileType go setlocal noexpandtab shiftwidth=8 tabstop=8]])
 
+vim.cmd([[autocmd FileType go nmap <leader>r :terminal go run .<cr>]])
+
+vim.cmd([[autocmd FileType go nmap <leader>t :terminal go test -race -cover<cr>]])
+vim.cmd([[autocmd FileType go nmap <leader>y :terminal golangci-lint run<cr>]])
+
 require('dk.keymaps')
 
 require('dk.lsp')

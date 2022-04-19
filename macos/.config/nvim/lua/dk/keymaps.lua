@@ -19,6 +19,3 @@ set('n', '<leader>fb',telescope.buffers,{})
 set('t','<esc>',[[<c-\><c-n>]])
 set('t','jk',[[<c-\><c-n><esc>]])
 
-vim.cmd([[autocmd FileType go nmap <leader>r :terminal go run .<cr>]])
-vim.cmd([[autocmd FileType go nmap <leader>t :terminal go test -race -cover<cr>]])
-vim.cmd([[autocmd FileType go nmap <leader>y :terminal golangci-lint run<cr>]])
