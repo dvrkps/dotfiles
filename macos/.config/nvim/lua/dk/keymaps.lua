@@ -1,5 +1,5 @@
-local set = function(mode, lhs, rhs, opts)
-	vim.keymap.set(mode,lhs,rhs,opts)
+local function set(mode, lhs, rhs, opts)
+  vim.keymap.set(mode,lhs,rhs,opts)
 end
 
 set('i','jk','<esc>')
