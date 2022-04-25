@@ -11,18 +11,18 @@ local on_attach = function(client, bufnr)
   local opts = { buffer=bufnr}
 
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  set('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-  set('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
-  set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-  set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-  set('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
-  set('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-  set('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-  set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-  set('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
-  set('n', '<leader>[', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-  set('n', '<leader>]', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
-  set('n', '<leader>ll', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+  set('n', 'gd', vim.lsp.buf.definition, opts)
+  set('n', 'K', vim.lsp.buf.hover, opts)
+  set('n', 'gi', vim.lsp.buf.implementation, opts)
+  set('n', 'gs', vim.lsp.buf.signature_help, opts)
+  set('n', 'gt', vim.lsp.buf.type_definition, opts)
+  set('n', '<leader>rn', vim.lsp.buf.rename, opts)
+  set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+  set('n', 'gr', vim.lsp.buf.references, opts)
+  set('n', '<leader>e', vim.lsp.diagnostic.show_line_diagnostics, opts)
+  set('n', '<leader>[', vim.diagnostic.goto_prev, opts)
+  set('n', '<leader>]', vim.diagnostic.goto_next, opts)
+  set('n', '<leader>ll', vim.diagnostic.setloclist, opts)
 end
 
 nvim_lsp.gopls.setup {
