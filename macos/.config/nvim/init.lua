@@ -35,17 +35,16 @@ vim.o.cursorline = true
 vim.o.background = 'light'
 vim.cmd('colorscheme solarized')
 
+local terminalGroup = vim.api.nvim_create_augroup("TerminalGroup", {clear= true})
 -- open terminal in insert mode
-vim.cmd('autocmd TermOpen * startinsert')
+vim.api.nvim_create_autocmd("TermOpen", { command="startinsert | setl nonu nornu signcolumn=no ", group=terminalGroup})
 
+local generalGroup = vim.api.nvim_create_augroup("GeneralGroup", {clear= true})
 -- don't auto commenting new lines
-vim.cmd([[au BufEnter * set fo-=c fo-=r fo-=o]])
+vim.api.nvim_create_autocmd("BufEnter", {command="set fo-=c fo-=r fo-=o", group=generalGroup})
 
--- use tabs for Go files
 vim.cmd([[autocmd FileType go setlocal noexpandtab shiftwidth=8 tabstop=8]])
-
 vim.cmd([[autocmd FileType go nmap <leader>r :terminal go run .<cr>]])
-
 vim.cmd([[autocmd FileType go nmap <leader>t :terminal go test -race -cover<cr>]])
 vim.cmd([[autocmd FileType go nmap <leader>y :terminal golangci-lint run<cr>]])
 
