@@ -7,7 +7,7 @@ end
 
 require('dk.plugins')
 
-vim.cmd('syntax off') -- vim.o.syntax not working for now
+vim.cmd('syntax off')
 
 -- vim.cmd('filetype plugin indent on')
 
@@ -22,6 +22,11 @@ vim.o.lazyredraw = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 
+vim.bo.expandtab = true  
+vim.bo.shiftwidth = 2
+vim.bo.tabstop = 2
+vim.bo.softtabstop = 2
+  
 vim.o.laststatus = 3
 
 vim.o.number = true
@@ -35,18 +40,26 @@ vim.o.cursorline = true
 vim.o.background = 'light'
 vim.cmd('colorscheme solarized')
 
-local terminalGroup = vim.api.nvim_create_augroup("TerminalGroup", {clear= true})
+local initGroup = vim.api.nvim_create_augroup("InitGroup", {clear= true})
 -- open terminal in insert mode
-vim.api.nvim_create_autocmd("TermOpen", { command="startinsert | setl nonu nornu signcolumn=no ", group=terminalGroup})
+vim.api.nvim_create_autocmd("TermOpen", { command="startinsert | setl nonu nornu signcolumn=no ", group=initGroup})
 
-local generalGroup = vim.api.nvim_create_augroup("GeneralGroup", {clear= true})
 -- don't auto commenting new lines
-vim.api.nvim_create_autocmd("BufEnter", {command="set fo-=c fo-=r fo-=o", group=generalGroup})
+vim.api.nvim_create_autocmd("BufEnter", {command="set fo-=c fo-=r fo-=o", group=initGroup})
 
-vim.cmd([[autocmd FileType go setlocal noexpandtab shiftwidth=8 tabstop=8]])
-vim.cmd([[autocmd FileType go nmap <leader>r :terminal go run .<cr>]])
-vim.cmd([[autocmd FileType go nmap <leader>t :terminal go test -race -cover<cr>]])
-vim.cmd([[autocmd FileType go nmap <leader>y :terminal golangci-lint run<cr>]])
+vim.api.nvim_create_autocmd("FileType", {
+  group = initGroup,
+  pattern = "go",
+  callback = function()
+    vim.bo.tabstop = 8
+    vim.bo.expandtab = false  
+    vim.bo.shiftwidth = 8
+    -- vim.schedule(function()
+      -- print("eto me")
+    -- end)
+  end,
+})
+
 
 require('dk.keymaps')
 
